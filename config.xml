@@ -9,4 +9,12 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+
+    <!-- PLATFORM SELECTION -->
+
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    <gap:platform name="winphone" />
+        
+
 </widget>
