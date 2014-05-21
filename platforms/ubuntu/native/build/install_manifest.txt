@@ -1,0 +1,9 @@
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/cordova-ubuntu
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/www/libcoreplugins.so
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/www/cordova.js
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/qml/main.qml
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/CordovaUbuntu.3.4/libcordovaubuntuplugin.so
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/CordovaUbuntu.3.4/qmldir
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/CordovaUbuntu.3.4/cordova_wrapper.js
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/CordovaUbuntu.3.4/CordovaViewInternal.qml
+/home/arky/Dev/Cordova/expat-flashcards/platforms/ubuntu/native/prefix/CordovaUbuntu.3.4/CordovaView.qml
