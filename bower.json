@@ -1,0 +1,9 @@
+{
+  "name": "expat-flashcards",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "jquery-mobile": "~1.4.2"
+  },
+  "devDependencies": {}
+}
