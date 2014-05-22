@@ -52,7 +52,7 @@ define(["jquery",
 		},
 
 		hash: function( url, href ) {
-			var parsed, loc, hash, resolved;
+			var parsed, loc, hash;
 
 			// Grab the hash for recording. If the passed url is a path
 			// we used the parsed version of the squashed url to reconstruct,
@@ -60,13 +60,13 @@ define(["jquery",
 			parsed = path.parseUrl( url );
 			loc = path.parseLocation();
 
-			if ( loc.pathname + loc.search === parsed.pathname + parsed.search ) {
+			if( loc.pathname + loc.search === parsed.pathname + parsed.search ) {
 				// If the pathname and search of the passed url is identical to the current loc
 				// then we must use the hash. Otherwise there will be no event
 				// eg, url = "/foo/bar?baz#bang", location.href = "http://example.com/foo/bar?baz"
 				hash = parsed.hash ? parsed.hash : parsed.pathname + parsed.search;
 			} else if ( path.isPath(url) ) {
-				resolved = path.parseUrl( href );
+				var resolved = path.parseUrl( href );
 				// If the passed url is a path, make it domain relative and remove any trailing hash
 				hash = resolved.pathname + resolved.search + (path.isPreservableHash( resolved.hash )? resolved.hash.replace( "#", "" ) : "");
 			} else {
@@ -91,7 +91,7 @@ define(["jquery",
 			// history management. In the case of hashchange we don't swallow it
 			// if there will be no hashchange fired (since that won't reset the value)
 			// and will swallow the following hashchange
-			if ( noEvents && hash !== path.stripHash(path.parseLocation().hash) ) {
+			if( noEvents && hash !== path.stripHash(path.parseLocation().hash) ) {
 				this.preventNextHashChange = noEvents;
 			}
 
@@ -122,7 +122,7 @@ define(["jquery",
 				title: document.title
 			}, data);
 
-			if ( isPopStateEvent ) {
+			if( isPopStateEvent ) {
 				popstateEvent = new $.Event( "popstate" );
 				popstateEvent.originalEvent = {
 					type: "popstate",
@@ -133,7 +133,7 @@ define(["jquery",
 
 				// Trigger a new faux popstate event to replace the one that we
 				// caught that was triggered by the hash setting above.
-				if ( !noEvents ) {
+				if( !noEvents ) {
 					this.ignorePopState = true;
 					$.mobile.window.trigger( popstateEvent );
 				}
@@ -145,6 +145,7 @@ define(["jquery",
 			this.history.add( state.url, state );
 		},
 
+
 		// This binding is intended to catch the popstate events that are fired
 		// when execution of the `$.navigate` method stops at window.location.hash = url;
 		// and completely prevent them from propagating. The popstate event will then be
@@ -153,17 +154,17 @@ define(["jquery",
 		// TODO grab the original event here and use it for the synthetic event in the
 		//      second half of the navigate execution that will follow this binding
 		popstate: function( event ) {
-			var hash, state;
+			var active, hash, state, closestIndex;
 
 			// Partly to support our test suite which manually alters the support
 			// value to test hashchange. Partly to prevent all around weirdness
-			if ( !$.event.special.navigate.isPushStateEnabled() ) {
+			if( !$.event.special.navigate.isPushStateEnabled() ){
 				return;
 			}
 
 			// If this is the popstate triggered by the actual alteration of the hash
 			// prevent it completely. History is tracked manually
-			if ( this.preventHashAssignPopState ) {
+			if( this.preventHashAssignPopState ) {
 				this.preventHashAssignPopState = false;
 				event.stopImmediatePropagation();
 				return;
@@ -171,7 +172,7 @@ define(["jquery",
 
 			// if this is the popstate triggered after the `replaceState` call in the go
 			// method, then simply ignore it. The history entry has already been captured
-			if ( this.ignorePopState ) {
+			if( this.ignorePopState ) {
 				this.ignorePopState = false;
 				return;
 			}
@@ -181,7 +182,7 @@ define(["jquery",
 			// avoid it and set the one time flag to false.
 			// TODO: Do we really need all these conditions? Comparing location hrefs
 			// should be sufficient.
-			if ( !event.originalEvent.state &&
+			if( !event.originalEvent.state &&
 				this.history.stack.length === 1 &&
 				this.ignoreInitialHashChange ) {
 				this.ignoreInitialHashChange = false;
@@ -199,7 +200,7 @@ define(["jquery",
 			// TODO it might be better to only add to the history stack
 			//      when the hash is adjacent to the active history entry
 			hash = path.parseLocation().hash;
-			if ( !event.originalEvent.state && hash ) {
+			if( !event.originalEvent.state && hash ) {
 				// squash the hash that's been assigned on the URL with replaceState
 				// also grab the resulting state object for storage
 				state = this.squash( hash );
@@ -242,14 +243,14 @@ define(["jquery",
 
 			// If hashchange listening is explicitly disabled or pushstate is supported
 			// avoid making use of the hashchange handler.
-			if (!$.event.special.navigate.isHashChangeEnabled() ||
+			if(!$.event.special.navigate.isHashChangeEnabled() ||
 				$.event.special.navigate.isPushStateEnabled() ) {
 				return;
 			}
 
 			// On occasion explicitly want to prevent the next hash from propogating because we only
 			// with to alter the url to represent the new state do so here
-			if ( this.preventNextHashChange ) {
+			if( this.preventNextHashChange ){
 				this.preventNextHashChange = false;
 				event.stopImmediatePropagation();
 				return;

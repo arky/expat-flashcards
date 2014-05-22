@@ -19,12 +19,11 @@ $.fn.grid = function( options ) {
 			$kids = $this.children(),
 			gridCols = { solo:1, a:2, b:3, c:4, d:5 },
 			grid = o.grid,
-			iterator,
-			letter;
+			iterator;
 
 			if ( !grid ) {
 				if ( $kids.length <= 5 ) {
-					for ( letter in gridCols ) {
+					for ( var letter in gridCols ) {
 						if ( gridCols[ letter ] === $kids.length ) {
 							grid = letter;
 						}

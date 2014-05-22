@@ -1,13 +1,14 @@
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
-//>>description: Changes input type to another after custom enhancements are made (ex. range > numeric).
+//>>description: Changes input type to another after custom enhancements are made (ex. range > numberic).
 //>>label: Degrade Inputs
 //>>group: Utilities
+
 
 define( [ "jquery", "./widgets/page" ], function( jQuery ) {
 //>>excludeEnd("jqmBuildExclude");
 (function( $, undefined ) {
 
-$.mobile.degradeInputs = {
+$.mobile.page.prototype.options.degradeInputs = {
 	color: false,
 	date: false,
 	datetime: false,
@@ -22,33 +23,37 @@ $.mobile.degradeInputs = {
 	url: false,
 	week: false
 };
-// Backcompat remove in 1.5
-$.mobile.page.prototype.options.degradeInputs = $.mobile.degradeInputs;
 
-// Auto self-init widgets
-$.mobile.degradeInputsWithin = function( target ) {
 
-	target = $( target );
+//auto self-init widgets
+$.mobile.document.bind( "pagecreate create", function( e ) {
 
-	// Degrade inputs to avoid poorly implemented native functionality
-	target.find( "input" ).not( $.mobile.page.prototype.keepNativeSelector() ).each(function() {
-		var element = $( this ),
+	var page = $.mobile.closestPageData( $( e.target ) ), options;
+
+	if ( !page ) {
+		return;
+	}
+
+	options = page.options;
+
+	// degrade inputs to avoid poorly implemented native functionality
+	$( e.target ).find( "input" ).not( page.keepNativeSelector() ).each(function() {
+		var $this = $( this ),
 			type = this.getAttribute( "type" ),
-			optType = $.mobile.degradeInputs[ type ] || "text",
-			html, hasType, findstr, repstr;
+			optType = options.degradeInputs[ type ] || "text";
 
-		if ( $.mobile.degradeInputs[ type ] ) {
-			html = $( "<div>" ).html( element.clone() ).html();
-			// In IE browsers, the type sometimes doesn't exist in the cloned markup, so we replace the closing tag instead
-			hasType = html.indexOf( " type=" ) > -1;
-			findstr = hasType ? /\s+type=["']?\w+['"]?/ : /\/?>/;
-			repstr = " type=\"" + optType + "\" data-" + $.mobile.ns + "type=\"" + type + "\"" + ( hasType ? "" : ">" );
+		if ( options.degradeInputs[ type ] ) {
+			var html = $( "<div>" ).html( $this.clone() ).html(),
+				// In IE browsers, the type sometimes doesn't exist in the cloned markup, so we replace the closing tag instead
+				hasType = html.indexOf( " type=" ) > -1,
+				findstr = hasType ? /\s+type=["']?\w+['"]?/ : /\/?>/,
+				repstr = " type=\"" + optType + "\" data-" + $.mobile.ns + "type=\"" + type + "\"" + ( hasType ? "" : ">" );
 
-			element.replaceWith( html.replace( findstr, repstr ) );
+			$this.replaceWith( html.replace( findstr, repstr ) );
 		}
 	});
 
-};
+});
 
 })( jQuery );
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);

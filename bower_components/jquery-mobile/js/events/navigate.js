@@ -6,25 +6,13 @@
 // TODO break out pushstate support test so we don't depend on the whole thing
 define([
 	"jquery",
-	"jquery-plugins/jquery.hashchange",
+	"depend!../jquery.hashchange[jquery]",
 	"./../jquery.mobile.ns",
 	"./../jquery.mobile.support" ], function( jQuery ) {
 //>>excludeEnd("jqmBuildExclude");
 
 (function( $, undefined ) {
-	var $win = $.mobile.window, self,
-		dummyFnToInitNavigate = function() {
-		};
-
-	$.event.special.beforenavigate = {
-		setup: function() {
-			$win.on( "navigate", dummyFnToInitNavigate );
-		},
-
-		teardown: function() {
-			$win.off( "navigate", dummyFnToInitNavigate );
-		}
-	};
+	var $win = $.mobile.window, self, history;
 
 	$.event.special.navigate = self = {
 		bound: false,
@@ -50,16 +38,16 @@ define([
 		popstate: function( event ) {
 			var newEvent = new $.Event( "navigate" ),
 				beforeNavigate = new $.Event( "beforenavigate" ),
-				state = event.originalEvent.state || {};
+				state = event.originalEvent.state || {},
+				href = location.href;
 
-			beforeNavigate.originalEvent = event;
 			$win.trigger( beforeNavigate );
 
-			if ( beforeNavigate.isDefaultPrevented() ) {
+			if( beforeNavigate.isDefaultPrevented() ){
 				return;
 			}
 
-			if ( event.historyState ) {
+			if( event.historyState ){
 				$.extend(state, event.historyState);
 			}
 
@@ -78,14 +66,13 @@ define([
 			}, 0);
 		},
 
-		hashchange: function( event /*, data */ ) {
+		hashchange: function( event, data ) {
 			var newEvent = new $.Event( "navigate" ),
 				beforeNavigate = new $.Event( "beforenavigate" );
 
-			beforeNavigate.originalEvent = event;
 			$win.trigger( beforeNavigate );
 
-			if ( beforeNavigate.isDefaultPrevented() ) {
+			if( beforeNavigate.isDefaultPrevented() ){
 				return;
 			}
 
@@ -108,17 +95,17 @@ define([
 		// TODO We really only want to set this up once
 		//      but I'm not clear if there's a beter way to achieve
 		//      this with the jQuery special event structure
-		setup: function( /* data, namespaces */ ) {
-			if ( self.bound ) {
+		setup: function( data, namespaces ) {
+			if( self.bound ) {
 				return;
 			}
 
 			self.bound = true;
 
-			if ( self.isPushStateEnabled() ) {
+			if( self.isPushStateEnabled() ) {
 				self.originalEventName = "popstate";
 				$win.bind( "popstate.navigate", self.popstate );
-			} else if ( self.isHashChangeEnabled() ) {
+			} else if ( self.isHashChangeEnabled() ){
 				self.originalEventName = "hashchange";
 				$win.bind( "hashchange.navigate", self.hashchange );
 			}

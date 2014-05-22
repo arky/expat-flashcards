@@ -28,5 +28,21 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "33b7e869838c67bd1322c4875de5cad9ee9ad01c",
+  "description": "expat-flashcards ================",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arky/expat-flashcards.git"
+  },
+  "author": "",
+  "license": "BSD"
 }

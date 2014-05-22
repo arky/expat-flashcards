@@ -1,76 +1,10 @@
 module.exports = function( grunt ) {
 	"use strict";
 
-	var _ = require( "underscore" ),
-		cheerio = require( "cheerio" ),
-
-		replaceCombinedCssReference = function( content, processedName ) {
-			return content.replace( /\.\.\/css\//, "css/" )
-				.replace( /jquery\.mobile\.css/gi, processedName + ".min.css" );
-		},
-
-		// Ensure that modules specified via the --modules option are in the same
-		// order as the one in which they appear in js/jquery.mobile.js. To achieve
-		// this, we parse js/jquery.mobile.js and reconstruct the array of
-		// dependencies listed therein.
-		makeModulesList = function( modules ) {
-			var start, end, index,
-				modulesHash = {},
-				fixedModules = [],
-				jsFile = grunt.file.read( path.join( "js", "jquery.mobile.js" ) );
-
-			modules = modules.split( "," );
-
-			// This is highly dependent on the contents of js/jquery.mobile.js
-			if ( jsFile ) {
-				start = jsFile.indexOf( "[" );
-				if ( start > -1 ) {
-					start++;
-					end = jsFile.indexOf( "]" );
-					if ( start < jsFile.length &&
-						end > -1 && end < jsFile.length && end > start ) {
-
-						// Convert list of desired modules to a hash
-						for ( index = 0 ; index < modules.length ; index++ ) {
-							modulesHash[ modules[ index ] ] = true;
-						}
-
-						// Split list of modules from js/jquery.mobile.js into an array
-						jsFile = jsFile
-							.slice( start, end )
-							.match( /"[^"]*"/gm );
-
-						// Add each desired module to the fixed list of modules in the
-						// correct order
-						for ( index = 0 ; index < jsFile.length ; index++ ) {
-
-							// First we need to touch up each module from js/jquery.mobile.js
-							jsFile[ index ] = jsFile[ index ]
-								.replace( /"/g, "" )
-								.replace( /^.\//, "" );
-
-							// Then, if it's in the hash of desired modules, add it to the
-							// list containing the desired modules in the correct order
-							if ( modulesHash[ jsFile[ index ] ] ) {
-								fixedModules.push( jsFile[ index ] );
-							}
-						}
-
-						// If we've found all the desired modules, we re-create the comma-
-						// separated list and return it.
-						if ( fixedModules.length === modules.length ) {
-							modules = fixedModules;
-						}
-					}
-				}
-			}
-
-			return modules;
-		},
-		path = require( "path" ),
+	var path = require( "path" ),
 		httpPort =  Math.floor( 9000 + Math.random()*1000 ),
 		name = "jquery.mobile",
-		dist = "dist" + path.sep,
+		dist = "dist",
 		copyrightYear = grunt.template.today( "UTC:yyyy" ),
 		banner = {
 			normal: [
@@ -88,114 +22,24 @@ module.exports = function( grunt ) {
 				"",
 				"" ].join( grunt.util.linefeed ),
 			minified: "/*! jQuery Mobile <%= version %> | <%if ( headShortHash ) {%>Git HEAD hash: <%= headShortHash %> <> <% } %>" + grunt.template.today( "UTC:yyyy-mm-dd" ) + "T" + grunt.template.today( "UTC:HH:MM:ss" ) + "Z | (c) 2010, " + copyrightYear + " jQuery Foundation, Inc. | jquery.org/license */\n"
-		},
-		dirs = {
-			dist: dist,
-			cdn: {
-				google: path.join( dist, "cdn-google" ),
-				jquery: path.join( dist, "cdn" ),
-				git: path.join( dist, "git" )
-			},
-			tmp: path.join( dist, "tmp" )
-		},
-		files = {
-			css: {
-				structure: {
-					src: "css/structure/jquery.mobile.structure.css",
-					unminified: name + ".structure<%= versionSuffix %>.css"
-				},
-				theme: {
-					src: "css/themes/default/jquery.mobile.theme.css",
-					unminified: name + ".theme<%= versionSuffix %>.css"
-				},
-				bundle: {
-					src: "css/themes/default/jquery.mobile.css",
-					unminified: name + "<%= versionSuffix %>.css"
-				},
-				inlinesvg: {
-					src: "css/themes/default/jquery.mobile.inline-svg.css",
-					unminified: name + ".inline-svg<%= versionSuffix %>.css"
-				},
-				inlinepng: {
-					src: "css/themes/default/jquery.mobile.inline-png.css",
-					unminified: name + ".inline-png<%= versionSuffix %>.css"
-				},
-				externalpng: {
-					src: "css/themes/default/jquery.mobile.external-png.css",
-					unminified: name + ".external-png<%= versionSuffix %>.css"
-				},
-				icons: {
-					src: "css/themes/default/jquery.mobile.icons.css",
-					unminified: name + ".icons<%= versionSuffix %>.css"
-				}
-			},
-			getCSSFiles: function( destDir ) {
-				destDir = destDir || ".";
-				var list = [];
-				_.values( files.css ).forEach( function( value ) {
-					list.push({
-						src: value.src,
-						dest: path.join( destDir, value.unminified )
-					});
-				});
-				return list;
-			},
-			getMinifiedCSSFiles: function( destDir ) {
-				destDir = destDir || ".";
-				var list = [];
-				_.values( files.css ).forEach( function( value ) {
-					list.push({
-						src: path.join( destDir, value.unminified ),
-						dest: path.join( destDir, value.minified )
-					});
-				});
-				return list;
-			},
-			cdn: [
-				name + "<%= versionSuffix %>.js",
-				name + "<%= versionSuffix %>.min.js",
-				name + "<%= versionSuffix %>.min.map",
-
-				"<%= files.css.structure.unminified %>",
-				"<%= files.css.structure.minified %>",
-				"<%= files.css.bundle.unminified %>",
-				"<%= files.css.bundle.minified %>",
-				"<%= files.css.inlinesvg.unminified %>",
-				"<%= files.css.inlinesvg.minified %>",
-				"<%= files.css.inlinepng.unminified %>",
-				"<%= files.css.inlinepng.minified %>",
-				"<%= files.css.externalpng.unminified %>",
-				"<%= files.css.externalpng.minified %>",
-				"<%= files.css.icons.unminified %>",
-				"<%= files.css.icons.minified %>",
-
-				"images/*.*",
-				"images/icons-png/**"
-			],
-
-			distZipContent: [
-				"<%= files.cdn %>",
-
-				"<%= files.css.theme.unminified %>",
-				"<%= files.css.theme.minified %>",
-
-				"images/icons-svg/**",
-				"demos/**"
-			],
-
-			zipFileName: name + "<%= versionSuffix %>.zip",
-
-			distZipOut: path.join( dist, name + "<%= versionSuffix %>.zip" ),
-
-			imagesZipOut: path.join( dist, name + ".images<%= versionSuffix %>.zip" ),
-
-			googleCDNZipOut: path.join( "<%= dirs.cdn.google %>","<%= files.zipFileName %>" )
 		};
 
-	// Add minified property to files.css.*
-	_.forEach( files.css, function( o ) {
-		o.minified = o.unminified.replace( /\.css$/, ".min.css" );
-	});
+	// grunt plugins
+	grunt.loadNpmTasks( "grunt-contrib-jshint" );
+	grunt.loadNpmTasks( "grunt-contrib-clean" );
+	grunt.loadNpmTasks( "grunt-contrib-copy" );
+	grunt.loadNpmTasks( "grunt-contrib-compress" );
+	grunt.loadNpmTasks( "grunt-contrib-concat" );
+	grunt.loadNpmTasks( "grunt-contrib-connect" );
+	grunt.loadNpmTasks( "grunt-contrib-qunit" );
+	grunt.loadNpmTasks( "grunt-contrib-requirejs" );
+	grunt.loadNpmTasks( "grunt-contrib-uglify" );
+	grunt.loadNpmTasks( "grunt-css" );
+	grunt.loadNpmTasks( "grunt-git-authors" );
+	grunt.loadNpmTasks( "grunt-qunit-junit" );
+
+	// load the project's default tasks
+	grunt.loadTasks( 'build/tasks');
 
 	// Project configuration.
 	grunt.config.init({
@@ -209,9 +53,9 @@ module.exports = function( grunt ) {
 
 		headShortHash: "",
 
-		dirs: dirs,
-
-		files: files,
+		files: {
+			cdn: path.join( dist, name + "-cdn" )
+		},
 
 		jshint: {
 			js: {
@@ -223,9 +67,7 @@ module.exports = function( grunt ) {
 						"js/**/*.js",
 						"!js/jquery.hashchange.js",
 						"!js/jquery.js",
-						"!js/jquery.ui.widget.js",
-						"!js/widgets/jquery.ui.tabs.js",
-						"!js/jquery.ui.core.js"
+						"!js/jquery.ui.widget.js"
 					]
 				}
 			},
@@ -260,12 +102,11 @@ module.exports = function( grunt ) {
 
 					mainConfigFile: "js/requirejs.config.js",
 
-					include: ( grunt.option( "modules" ) ?
-						makeModulesList( grunt.option( "modules" ) ) :
-						[ "jquery.mobile" ] ),
+					include: ( grunt.option( "modules" ) || "jquery.mobile" ).split( "," ),
 
 					exclude: [
 						"jquery",
+						"depend",
 						"json",
 						"json!../package.json"
 					],
@@ -344,17 +185,32 @@ module.exports = function( grunt ) {
 				cssImportIgnore: null
 			},
 			all: {
-				files: files.getCSSFiles( dist )
+				files: {
+					"dist/jquery.mobile.structure<%= versionSuffix %>.css": "css/structure/jquery.mobile.structure.css",
+					"dist/jquery.mobile.theme<%= versionSuffix %>.css": "css/themes/default/jquery.mobile.theme.css",
+					"dist/jquery.mobile<%= versionSuffix %>.css": "css/themes/default/jquery.mobile.css"
+				}
 			}
 		},
 
 		cssmin: {
 			options: {
-				banner: banner.minified,
-				keepSpecialComments: 0
+				banner: banner.minified
 			},
-			minify: {
-				files: files.getMinifiedCSSFiles( dist )
+			structure: {
+				files: {
+					"dist/jquery.mobile.structure<%= versionSuffix %>.min.css": "dist/jquery.mobile.structure<%= versionSuffix %>.css"
+				}
+			},
+			theme: {
+				files: {
+					"dist/jquery.mobile.theme<%= versionSuffix %>.min.css": "dist/jquery.mobile.theme<%= versionSuffix %>.css"
+				}
+			},
+			bundle: {
+				files: {
+					"dist/jquery.mobile<%= versionSuffix %>.min.css": "dist/jquery.mobile<%= versionSuffix %>.css"
+				}
 			}
 		},
 
@@ -362,7 +218,7 @@ module.exports = function( grunt ) {
 			images: {
 				expand: true,
 				cwd: "css/themes/default/images",
-				src: "**",
+				src: "*",
 				dest: path.join( dist, "images/" )
 			},
 			"demos.nested-includes": {
@@ -382,8 +238,9 @@ module.exports = function( grunt ) {
 				files: [
 					{
 						expand: true,
-						src: [ "demos/jqm-contents.php", "demos/jqm-navmenu.php", "demos/jqm-search.php" ],
-						dest: dist
+						src: [ "demos/global-nav.php", "demos/search.php" ],
+						dest: dist,
+						ext: ".php"
 					}
 				]
 
@@ -393,10 +250,10 @@ module.exports = function( grunt ) {
 					processContent: function( content, srcPath ) {
 						var processedName = grunt.config.process( name + "<%= versionSuffix %>" );
 						content = content.replace( /_assets\/js\/">/gi, "_assets/js/index.js\">" );
-						content = content.replace( /\.\.\/external\/jquery\//gi, "js/" );
-						content = content.replace( /\.\.\/js\/\"/gi, "js/\"" );
+						content = content.replace( /\.\.\/js\//gi, "js/" );
 						content = content.replace( /js\/"/gi, "js/" + processedName + ".min.js\"" );
-						content = replaceCombinedCssReference( content, processedName );
+						content = content.replace( /\.\.\/css\//gi, "css/" );
+						content = content.replace( /jquery\.mobile\.css/gi, processedName + ".min.css" );
 						content = content.replace( /^\s*<\?php include\(\s*['"]([^'"]+)['"].*$/gmi,
 							function( match, includePath /*, offset, string */ ) {
 								var fileToInclude, newSrcPath = srcPath;
@@ -404,7 +261,7 @@ module.exports = function( grunt ) {
 								// If we've already handled the nested includes use the version
 								// that was copied to the dist folder
 								// TODO use the config from copy:demos.nested.files
-								if( includePath.match(/jqm\-contents.php|jqm\-navmenu.php|jqm\-search.php/) ) {
+								if( includePath.match(/search.php|global\-nav.php/) ) {
 									newSrcPath = "dist/" + newSrcPath;
 								}
 
@@ -414,75 +271,15 @@ module.exports = function( grunt ) {
 							}
 						);
 						content = content.replace( /\.php/gi, ".html" );
-
-						// Demos that separately refer to the structure need to be processed here
-						content = content.replace( /css\/structure\/jquery\.mobile\.structure\.css/gi,
-							path.join( "css", "themes", "default", processedName + ".structure" + ".min.css" ) );
-
-						// References to the icons CSS file need to be processed here
-						content = content.replace( /css\/themes\/default\/jquery\.mobile\.icons\.css/gi,
-							path.join( "..", "jquery.mobile.icons.min.css" ) );
 						return content;
 					}
 				},
 				files: [
 					{
 						expand: true,
-						src: [ "index.php", "demos/**/*.php", "demos/**/*.html", "!demos/navigation-php-redirect/**" ],
+						src: [ "index.php", "demos/**/*.php", "demos/**/*.html", "!demos/examples/redirect/**" ],
 						dest: dist,
 						ext: ".html"
-					}
-				]
-			},
-			"demos.backbone": {
-				options: {
-					processContent: function( content, srcPath ) {
-						var $,
-							processedName = grunt.config.process( name + "<%= versionSuffix %>" );
-
-						if ( /\.html$/.test( srcPath ) ) {
-
-							content = replaceCombinedCssReference( content, processedName );
-
-							$ = cheerio.load( content );
-
-							$( "script" ).each( function ( idx, element ) {
-								var script = $( element );
-								if ( /requirejs\.config\.js$/.test( script.attr( "src" ) ) ) {
-
-									// Get rid of the requirejs.config.js script tag since we're using the built bundle
-									script.remove();
-								} else if ( /require.js$/.test( script.attr( "src" ) ) ) {
-
-									// Use the rawgithub.com version for requirejs
-									script.attr( "src",
-										"//rawgithub.com/jrburke/requirejs/" +
-										grunt.template.process( "<%= pkg.devDependencies.requirejs %>" ) +
-										"/require.js" );
-								}
-							});
-
-							// write out newly created file contents
-							content = $.html();
-						} else if ( /\.js$/.test( srcPath ) ) {
-
-							// Redifines paths for compiled demos
-							content = content.replace( /baseUrl:.*$/m, "baseUrl: \"../js\"," );
-							content = content.replace( /\.\.\/external\/jquery\//, "" );
-							content = content.replace( /jquery\.mobile/, processedName );
-							content = content.replace(
-								/"backbone-requirejs-demos".*$/m,
-								"\"backbone-requirejs-demos\": \"../backbone-requirejs/js\"" );
-						}
-
-						return content;
-					}
-				},
-				files: [
-					{
-						expand: true,
-						src: [ "demos/backbone-requirejs/**/*" ],
-						dest: dist
 					}
 				]
 			},
@@ -490,7 +287,7 @@ module.exports = function( grunt ) {
 				files: [
 					{
 						expand: true,
-						cwd: "external/jquery",
+						cwd: "js",
 						src: [ "jquery.js" ],
 						dest: path.join( dist, "demos/js/" )
 					},
@@ -503,14 +300,12 @@ module.exports = function( grunt ) {
 					{
 						expand: true,
 						cwd: dist,
-						src: [
-							"images/**"
-						].concat( _.pluck( files.getMinifiedCSSFiles(), "dest" ) ),
+						src: [ "*.css", "images/*" ],
 						dest: path.join( dist, "demos/css/themes/default/" )
 					},
 					{
 						expand: true,
-						src: [ "demos/**/*", "!**/*.php", "!**/*.html", "!demos/backbone-requirejs/**/*" ],
+						src: [ "demos/**/*", "!**/*.php", "!**/*.html" ],
 						dest: dist
 					}
 				]
@@ -530,97 +325,52 @@ module.exports = function( grunt ) {
 					}
 				]
 			},
-			"jqueryCDN": {
-				files: [{
-					expand: true,
-					cwd: dist,
-					src: "<%= files.cdn %>",
-					dest: "<%= dirs.cdn.jquery %>/"
-				}]
-			},
-			"googleCDN": {
-				options: {
-					processContent: function( content, srcPath ) {
-						if ( /\.min.js$|\.min.map$/.test( srcPath ) ) {
-							// We need to rewrite the map info
-							var re = new RegExp( grunt.template.process( "<%= versionSuffix %>" ), "g" );
-							content = content.replace( re, "" );
-						}
-						return content;
+			cdn: {
+				files: [
+					{
+						expand: true,
+						cwd: dist,
+						src: [
+							name + "*<%= versionSuffix %>.*",
+							"images/*",
+							"!*.zip"
+						],
+						dest: "<%= files.cdn %>"
 					}
-				},
-				files: {
-					// WARNING: This will be modified by the config:copy:noversion task
-					cwd: dist,
-					src: "<%= files.cdn %>",
-					dest: "<%= dirs.tmp %>"
-				}
-			},
-			git: {
-				options: {
-					processContent: function( content, srcPath ) {
-						if ( /\.min.js$|\.min.map$/.test( srcPath ) ) {
-							// We need to rewrite the map info
-							var re = new RegExp( grunt.template.process( name ), "g" );
-							content = content.replace( re, name + "-git" );
-						}
-						return content;
-					},
-					processContentExclude: [ "**/*.zip", "**/*.gif", "**/*.png" ]
-				},
-				files: {
-					// WARNING: This will be modified by the config:copy:git task
-					cwd: dist,
-					src: "<%= files.cdn %>",
-					dest: "<%= dirs.cdn.git %>"
-				}
+				]
 			}
 		},
 
-		"hash-manifest": {
-			googleCDN: {
-				options: {
-					algo: "md5",
-					cwd: "<%= dirs.tmp %>"
-				},
-				src: [ "**/*" ],
-				dest: "MANIFEST"
+		"md5-manifest": {
+			cdn: {
+				files: [
+					{
+						expand: true,
+						cwd: "<%= files.cdn %>",
+						src: [ "**/*", "!MANIFEST" ],
+						dest: "<%= files.cdn %>/MANIFEST"
+					}
+				]
 			}
 		},
 
 		compress: {
 			dist: {
 				options: {
-					archive: "<%= files.distZipOut %>"
+					archive: path.join( dist, name ) + "<%= versionSuffix %>.zip"
 				},
 				files: [
-					{
-						expand: true,
-						cwd: dist,
-						src: "<%= files.distZipContent %>"
-					}
+					{ expand: true, cwd: dist, src: [ "**", "!*.zip" ] }
 				]
 			},
-			images: {
+			cdn: {
 				options: {
-					archive: "<%= files.imagesZipOut %>"
+					archive: "<%= files.cdn %>.zip"
 				},
 				files: [
 					{
 						expand: true,
-						cwd: dist,
-						src: [ "images/**" ]
-					}
-				]
-			},
-			"googleCDN": {
-				options: {
-					archive: "<%= files.googleCDNZipOut %>"
-				},
-				files: [
-					{
-						expand: true,
-						cwd: "<%= dirs.tmp %>",
+						cwd: "<%= files.cdn %>",
 						src: [ "**/*" ]
 					}
 				]
@@ -631,7 +381,7 @@ module.exports = function( grunt ) {
 			server: {
 				options: {
 					port: httpPort,
-					base: ".",
+					base: '.',
 					middleware: function( connect, options ) {
 						return [
 							// For requests to "[...]/js/" return the built jquery.mobile.js
@@ -661,108 +411,52 @@ module.exports = function( grunt ) {
 				dest: "build/test-results",
 				namer: function (url) {
 					var match = url.match(/tests\/([^\/]*)\/(.*)$/);
-					return match[2].replace(/\//g, ".").replace(/\.html/, "" ).replace(/\?/, "-");
+					return match[2].replace(/\//g, '.').replace(/\.html/, '' ).replace(/\?/, "-");
 				}
 			}
 		},
 
 		qunit: {
 			options: {
-				timeout: 30000,
-				"--web-security": "no",
-				coverage: {
-					baseUrl: ".",
-					src: [
-						"js/**/*.js",
-						"!js/jquery.tag.inserter.js",
-						"!js/requirejs.config.js"
-					],
-					instrumentedFiles: "temp/",
-					htmlReport: "_tests/reports/coverage",
-					lcovReport: "_tests/reports/lcov",
-					linesThresholdPct: 0
-				}
+				timeout: 30000
 			},
+
+			files: {},
 
 			http: {
 				options: {
 					urls: (function() {
-						var allSuites, patterns, paths,
-							testDirs = [ "unit", "integration" ],
-							suites = ( grunt.option( "suites" ) || process.env.SUITES || "" ).split( "," ),
-							types = ( grunt.option( "types" ) || process.env.TYPES || "" ).split( "," ),
+						// Find the test files
+						var suites = grunt.util._.without( ( grunt.option( "suites" ) || "" ).split( "," ), "" ),
+							patterns, paths, idx,
+							onePath = "",
+							uniquePaths = [],
 							versionedPaths = [],
-							jQueries = ( grunt.option( "jqueries" ) || process.env.JQUERIES || "" ).split( "," ),
-							excludes = _.chain( suites )
-								.filter( function( suite ) { return ( /^!/.test( suite ) ); } )
-								.map( function( suite ) { return suite.substring( 1 ); } )
-								.value();
+							jQueries = grunt.util._.without( ( grunt.option( "jqueries" ) || process.env.JQUERIES || "" ).split( "," ), "" );
 
-						// Trim empties
-						suites = _.without( suites, "" );
-						types = _.without( types, "" );
-						jQueries = _.without( jQueries, "" );
-
-						// So that unit suites runs before integration suites
-						types = types.sort().reverse();
-
-						allSuites = _.chain( grunt.file.expand(
-								{
-									filter: "isDirectory",
-									cwd: "tests"
-								},
-								_.map( testDirs, function( dir ) {
-									return dir + "/*";
-								})
-							))
-							.map( function( dir ) { return dir.split( "/" )[ 1 ]; } )
-							.difference( excludes )
-							.unique()
-							.value();
-
-
-						// Remove negations from list of suites
-						suites = _.filter( suites, function( suite ) { return ( !/^!/.test( suite ) ); } );
-
-						if ( types.length ){
-							testDirs = [];
-							types.forEach(function( type ) {
-								testDirs.push( type );
+						if ( suites.length ) {
+							patterns = [];
+							suites.forEach( function( suite ) {
+								patterns = patterns.concat( [ "tests/unit/" + suite + "/index.html", "tests/unit/" + suite + "/*/index.html", "tests/unit/" + suite + "/**/*-tests.html" ] );
 							});
+						} else {
+							patterns = [ "tests/unit/*/index.html", "tests/unit/*/*/index.html", "tests/unit/**/*-tests.html" ];
 						}
-
-						patterns = [];
-
-						if ( !suites.length ) {
-							suites = allSuites;
-						}
-
-						_.chain( suites )
-							.difference( excludes )
-							.forEach( function( suite ) {
-								testDirs.forEach( function( dir ) {
-									dir = "tests/" + dir;
-									patterns = patterns.concat([
-										dir + "/" + suite + "/index.html",
-										dir + "/" + suite + "/*/index.html",
-										dir + "/" + suite + "/**/*-tests.html"
-									]);
-								});
-							});
 
 						paths = grunt.file.expand( patterns )
-							.filter( function( testPath ) {
-								if ( grunt.file.isDir( testPath ) ) {
-									testPath = path.join( testPath, "index.html" );
-								}
-								return grunt.file.exists( testPath );
-							})
+							.sort()
 							.map( function( path ) {
 								// Some of our tests (ie. navigation) don't like having the index.html too much
-								return path.replace( /\/index.html$/, "/" );
+								return path.replace( /\/\index.html$/, "/" );
 							});
 
-						paths = grunt.util._.uniq( paths );
+						for ( idx in paths ) {
+							if ( onePath !== paths[ idx ] ) {
+								onePath = paths[ idx ];
+								uniquePaths.push( onePath );
+							}
+						}
+						paths = uniquePaths;
 
 						if ( jQueries.length ) {
 							paths.forEach( function( path ) {
@@ -784,153 +478,77 @@ module.exports = function( grunt ) {
 			}
 		},
 
-		coveralls: {
+		rsync: {
 			options: {
-				force: true
+				user: "jqadmin",
+				host: "code.origin.jquery.com",
+				remoteBase: "/var/www/html/code.jquery.com/mobile/",
+				cwd: dist
 			},
-			all: {
-
-				// LCOV coverage file relevant to every target
-				src: "_tests/reports/lcov/lcov.info"
+			release: {
+				files: {
+					"<%= pkg.version %>/": [
+						path.join( dist, name + "*.js" ),
+						path.join( dist, name + ".min.map" ),
+						path.join( dist, name + "*.css" ),
+						path.join( dist, name + ".zip" ),
+						path.join( dist, "demos" ),
+						path.join( dist, "images" )
+					]
+				}
 			}
 		},
 
-		bowercopy: {
+		curl: {
 			options: {
+				baseUrl: "http://code.origin.jquery.com/mobile/",
+				querystring: "?reload=1",
+				cwd: dist
+			},
+			release: {
+				files: {
+					"<%= pkg.version %>/": [
+						path.join( dist, name + "*.js" ),
+						path.join( dist, name + ".min.map" ),
+						path.join( dist, name + "*.css" ),
+						path.join( dist, name + ".zip" )
+					]
+				}
+			}
+		},
 
-				// Bower components folder will be removed afterwards
-				clean: true,
-				destPrefix: "external"
-			},
-			tests: {
-				files: {
-					"qunit/qunit.js": "qunit/qunit/qunit.js",
-					"qunit/qunit.css": "qunit/qunit/qunit.css",
-					"jshint/jshint.js": "jshint/dist/jshint.js"
-				}
-			},
-			requirejs: {
-				files: {
-					"requirejs/require.js": "requirejs/require.js",
-					"requirejs/plugins/text.js": "requirejs-text/text.js",
-					"requirejs/plugins/json.js": "requirejs-plugins/src/json.js"
-				}
-			},
-			jquery: {
-				files: {
-					"jquery/jquery.js": "jquery/jquery.js"
-				}
-			},
-			"jquery-ui": {
-				options: {
-					copyOptions: {
-						process: function( content ) {
-							var version = grunt.file.readJSON( "bower.json" ).dependencies[ "jquery-ui" ];
-							if ( /#/.test( version ) ) {
-								version = version.split( "#" )[ 1 ];
-							}
-							return content.replace( /@VERSION/g, version );
-						}
-					}
-				},
-				files: {
-					"jquery-ui/jquery.ui.core.js": "jquery-ui/ui/jquery.ui.core.js",
-					"jquery-ui/jquery.ui.widget.js": "jquery-ui/ui/jquery.ui.widget.js"
-				}
-			},
-			"jquery-ui-tabs": {
-				options: {
-					copyOptions: {
-						process: function( content ) {
-							var version = grunt.file.readJSON( "bower.json" ).dependencies[ "jquery-ui-tabs" ];
-							if ( /#/.test( version ) ) {
-								version = version.split( "#" )[ 1 ];
-							}
-							return content.replace( /@VERSION/g, version );
-						}
-					}
-				},
-				files: {
-					"jquery-ui/jquery.ui.tabs.js": "jquery-ui-tabs/ui/jquery.ui.tabs.js"
-				}
-			},
-			"jquery-plugins": {
-				files: {
-					"jquery/plugins/jquery.hashchange.js": "jquery-hashchange/jquery.ba-hashchange.js"
-				}
+		release: {
+			options: {
+				versionRegExp: /^(\d)\.(\d+)\.(\d)(-(?:alpha|beta|rc)\.\d|pre)?$/
 			}
 		},
 
 		clean: {
 			dist: [ dist ],
-            git: [ path.join( dist, "git" ) ],
-			tmp: [ "<%= dirs.tmp %>" ],
-			testsOutput: [ "_tests" ],
-			"googleCDN": [ "<%= dirs.cdn.google %>" ],
-			"jqueryCDN": [ "<%= dirs.cdn.jquery %>" ]
+			cdn: [ "<%= files.cdn %>" ]
 		}
-	});
-
-	// grunt plugins
-	require( "load-grunt-tasks" )( grunt );
-	// load the project's default tasks
-	grunt.loadTasks( "build/tasks");
-
-	grunt.registerTask( "release:init", function() {
-		// Set the version suffix for releases
-		grunt.config.set( "versionSuffix", "-<%= pkg.version%>" );
 	});
 
 	grunt.registerTask( "lint", [ "jshint" ] );
 
-	grunt.registerTask( "changelog", ["changelog:create"] );
+	grunt.registerTask( "js:release",  [ "requirejs", "concat:js", "uglify", "copy:sourcemap" ] );
+	grunt.registerTask( "js", [ "config:dev", "js:release" ] );
 
-	grunt.registerTask( "js", [ "requirejs", "concat:js" ] );
-	grunt.registerTask( "js:release",  [ "js", "uglify", "copy:sourcemap" ] );
+	grunt.registerTask( "css:release", [ "cssbuild", "cssmin" ] );
+	grunt.registerTask( "css", [ "config:dev", "css:release" ] );
 
-	grunt.registerTask( "css", [ "cssbuild" ] );
-	grunt.registerTask( "css:release", [ "css", "cssmin" ] );
+	grunt.registerTask( "demos", [ "concat:demos", "copy:demos.nested-includes", "copy:demos.processed", "copy:demos.unprocessed" ] );
 
-	grunt.registerTask( "demos", [
-		"concat:demos",
-		"copy:demos.nested-includes",
-		"copy:demos.processed",
-		"copy:demos.unprocessed",
-		"copy:demos.backbone"
-	]);
+	grunt.registerTask( "cdn", [ "release:init", "clean:cdn", "copy:cdn", "md5-manifest:cdn", "compress:cdn", "clean:cdn" ] );
 
-	grunt.registerTask( "cdn", [
-		"release:init",
-		"clean:jqueryCDN", "copy:jqueryCDN",
-		"clean:tmp",
-		"config:copy:googleCDN", "copy:googleCDN", "hash-manifest:googleCDN", "compress:googleCDN",
-		"clean:tmp"
-	]);
-
-	grunt.registerTask( "dist", [
-		"config:fetchHeadHash",
-		"js:release",
-		"css:release",
-		"copy:images",
-		"demos",
-		"compress:dist",
-		"compress:images"
-	]);
+	grunt.registerTask( "dist", [ "config:fetchHeadHash", "js:release", "css:release", "copy:images", "demos", "compress:dist"  ] );
 	grunt.registerTask( "dist:release", [ "release:init", "dist", "cdn" ] );
-	grunt.registerTask( "dist:git", [ "dist", "clean:git", "config:copy:git:-git", "copy:git" ] );
 
-	grunt.registerTask( "updateDependencies", [ "bowercopy" ] );
-
-	grunt.registerTask( "test",
-		[
-			"clean:testsOutput",
-			"jshint",
-			"config:fetchHeadHash",
-			"js:release",
-			"connect", "qunit:http"
-		]
-	);
+	grunt.registerTask( "test", [ "config:fetchHeadHash", "js:release", "connect", "qunit:http" ] );
 	grunt.registerTask( "test:ci", [ "qunit_junit", "connect", "qunit:http" ] );
+
+	grunt.registerTask( "deploy", [ "release:init", "release:fail-if-pre", "dist:release", "rsync:release" ] );
+	grunt.registerTask( "release", [ "clean", "release:init", "release:check-git-status", "release:set-version", "release:tag", "recurse:deploy", "release:set-next-version" ] );
 
 	// Default grunt
 	grunt.registerTask( "default", [ "dist" ] );
