@@ -1,0 +1,4005 @@
+
+{
+  "Swahili":[
+    {
+        "q": "dunia",
+        "a": "the world"
+    },
+    {
+        "q": "ulimwengu",
+        "a": "the world"
+    },
+    {
+        "q": "nchi kavu",
+        "a": "the land"
+    },
+    {
+        "q": "udongo",
+        "a": "the soil"
+    },
+    {
+        "q": "vumbi",
+        "a": "the dust"
+    },
+    {
+        "q": "matope",
+        "a": "the mud"
+    },
+    {
+        "q": "mchanga",
+        "a": "the sand"
+    },
+    {
+        "q": "mlima",
+        "a": "the mountain or hill"
+    },
+    {
+        "q": "kilima",
+        "a": "the mountain or hill"
+    },
+    {
+        "q": "mwamba",
+        "a": "the cliff or precipice"
+    },
+    {
+        "q": "tambarare",
+        "a": "the plain"
+    },
+    {
+        "q": "bonde",
+        "a": "the valley"
+    },
+    {
+        "q": "kisiwa",
+        "a": "the island"
+    },
+    {
+        "q": "bara",
+        "a": "the mainland"
+    },
+    {
+        "q": "ufuko",
+        "a": "the shore"
+    },
+    {
+        "q": "pwani",
+        "a": "the shore"
+    },
+    {
+        "q": "pango",
+        "a": "the cave"
+    },
+    {
+        "q": "maji",
+        "a": "the water"
+    },
+    {
+        "q": "bahari",
+        "a": "the sea"
+    },
+    {
+        "q": "shwari, shuwari",
+        "a": "calm"
+    },
+    {
+        "q": "-chafuka",
+        "a": "rough(2)"
+    },
+    {
+        "q": "povu",
+        "a": "the foam"
+    },
+    {
+        "q": "bahari",
+        "a": "the ocean"
+    },
+    {
+        "q": "ziwa",
+        "a": "the lake"
+    },
+    {
+        "q": "ghuba",
+        "a": "the bay"
+    },
+    {
+        "q": "wangwa",
+        "a": "the lagoon"
+    },
+    {
+        "q": "mwamba ",
+        "a": "the reef"
+    },
+    {
+        "q": "rasi",
+        "a": "the cape"
+    },
+    {
+        "q": "wimbi (1)",
+        "a": "the wave"
+    },
+    {
+        "q": "maji (ya) kujaa na kupwa",
+        "a": "the tide"
+    },
+    {
+        "q": "maji kupwa",
+        "a": "the low tide"
+    },
+    {
+        "q": "maji kujaa",
+        "a": "the high tide"
+    },
+    {
+        "q": "mto ",
+        "a": "the river or stream"
+    },
+    {
+        "q": "chemchemi",
+        "a": "the spring or well"
+    },
+    {
+        "q": "kisima",
+        "a": "the spring or well"
+    },
+    {
+        "q": "kinamasi",
+        "a": "the swamp"
+    },
+    {
+        "q": "maporomoko (ya maji)",
+        "a": "the waterfall"
+    },
+    {
+        "q": "msitu",
+        "a": "the woods or forest"
+    },
+    {
+        "q": "mwitu",
+        "a": "the woods or forest"
+    },
+    {
+        "q": "mbuga",
+        "a": "the savanna"
+    },
+    {
+        "q": "nyika",
+        "a": "the savanna"
+    },
+    {
+        "q": "savana",
+        "a": "the savanna"
+    },
+    {
+        "q": "mti",
+        "a": "the wood"
+    },
+    {
+        "q": "jiwe",
+        "a": "the stone or rock"
+    },
+    {
+        "q": "tetemeko (la ardhi)",
+        "a": "the earthquake"
+    },
+    {
+        "q": "mbingu",
+        "a": "the sky"
+    },
+    {
+        "q": "anga",
+        "a": "the sky"
+    },
+    {
+        "q": "jua",
+        "a": "the sun"
+    },
+    {
+        "q": "mwezi",
+        "a": "the moon"
+    },
+    {
+        "q": "nyota",
+        "a": "the star"
+    },
+    {
+        "q": "umeme",
+        "a": "the lightning"
+    },
+    {
+        "q": "ngurumo",
+        "a": "the thunder"
+    },
+    {
+        "q": "radi",
+        "a": "the bolt of lightning"
+    },
+    {
+        "q": "tufani",
+        "a": "the storm"
+    },
+    {
+        "q": "dhoruba, dharuba",
+        "a": "the storm"
+    },
+    {
+        "q": "kimbunga",
+        "a": "the storm"
+    },
+    {
+        "q": "upinde (wa mvua)",
+        "a": "the rainbow"
+    },
+    {
+        "q": "mwanga",
+        "a": "the light"
+    },
+    {
+        "q": "nuru",
+        "a": "the light"
+    },
+    {
+        "q": "giza, kiza",
+        "a": "the darkness"
+    },
+    {
+        "q": "kivuli",
+        "a": "the shade or shadow"
+    },
+    {
+        "q": "umande",
+        "a": "the dew"
+    },
+    {
+        "q": "hewa",
+        "a": "the air"
+    },
+    {
+        "q": "upepo",
+        "a": "the wind"
+    },
+    {
+        "q": "wingu",
+        "a": "the cloud"
+    },
+    {
+        "q": "ukungu",
+        "a": "the fog"
+    },
+    {
+        "q": "mvua",
+        "a": "the rain"
+    },
+    {
+        "q": "theluji",
+        "a": "the snow"
+    },
+    {
+        "q": "barafu",
+        "a": "the ice"
+    },
+    {
+        "q": "miali ya kaskazini ya dunia",
+        "a": "the arctic lights"
+    },
+    {
+        "q": "-ganda",
+        "a": "to freeze"
+    },
+    {
+        "q": "hali ya hewa",
+        "a": "the weather"
+    },
+    {
+        "q": "moto",
+        "a": "the fire"
+    },
+    {
+        "q": "ulimi wa moto",
+        "a": "the flame"
+    },
+    {
+        "q": "mwali",
+        "a": "the flame"
+    },
+    {
+        "q": "moshi",
+        "a": "the smoke"
+    },
+    {
+        "q": "mvuke",
+        "a": "the steam"
+    },
+    {
+        "q": "jivu",
+        "a": "the ash"
+    },
+    {
+        "q": "makaa (ya moto)",
+        "a": "the embers"
+    },
+    {
+        "q": "-unguza",
+        "a": "to burn"
+    },
+    {
+        "q": "-ungua",
+        "a": "to burn(2)"
+    },
+    {
+        "q": "-waka",
+        "a": "to burn(2)"
+    },
+    {
+        "q": "-washa",
+        "a": "to light"
+    },
+    {
+        "q": "-zima ",
+        "a": "to extinguish"
+    },
+    {
+        "q": "kiberiti",
+        "a": "the match"
+    },
+    {
+        "q": "kuni",
+        "a": "the firewood"
+    },
+    {
+        "q": "makaa",
+        "a": "the charcoal"
+    },
+    {
+        "q": "mtu",
+        "a": "the person"
+    },
+    {
+        "q": "mwanamume",
+        "a": "the man"
+    },
+    {
+        "q": "mwanamke",
+        "a": "the woman"
+    },
+    {
+        "q": "kiume",
+        "a": "male"
+    },
+    {
+        "q": "kike",
+        "a": "female"
+    },
+    {
+        "q": "mtoto",
+        "a": "the boy"
+    },
+    {
+        "q": "mvulana",
+        "a": "the young man"
+    },
+    {
+        "q": "kijana",
+        "a": "the young man"
+    },
+    {
+        "q": "mtoto",
+        "a": "the girl"
+    },
+    {
+        "q": "msichana",
+        "a": "the young woman"
+    },
+    {
+        "q": "kijana",
+        "a": "the young woman"
+    },
+    {
+        "q": "mtoto",
+        "a": "the child"
+    },
+    {
+        "q": "mtoto mchanga",
+        "a": "the baby"
+    },
+    {
+        "q": "mume",
+        "a": "the husband"
+    },
+    {
+        "q": "mke",
+        "a": "the wife"
+    },
+    {
+        "q": "-oa",
+        "a": "to marry"
+    },
+    {
+        "q": "-olewa",
+        "a": "to marry"
+    },
+    {
+        "q": "arusi, harusi",
+        "a": "the wedding"
+    },
+    {
+        "q": "talaka",
+        "a": "the divorce"
+    },
+    {
+        "q": "baba",
+        "a": "the father"
+    },
+    {
+        "q": "mama",
+        "a": "the mother"
+    },
+    {
+        "q": "mzazi",
+        "a": "the parents"
+    },
+    {
+        "q": "mwana",
+        "a": "the son"
+    },
+    {
+        "q": "mwana",
+        "a": "the daughter"
+    },
+    {
+        "q": "mwana",
+        "a": "the child(2)"
+    },
+    {
+        "q": "kaka",
+        "a": "the brother"
+    },
+    {
+        "q": "ndugu",
+        "a": "the brother"
+    },
+    {
+        "q": "mkubwa",
+        "a": "the brother"
+    },
+    {
+        "q": "mdogo",
+        "a": "the brother"
+    },
+    {
+        "q": "kaka",
+        "a": "the older brother"
+    },
+    {
+        "q": "mkubwa",
+        "a": "the older brother"
+    },
+    {
+        "q": "ndugu",
+        "a": "the older brother"
+    },
+    {
+        "q": "mdogo",
+        "a": "the younger brother"
+    },
+    {
+        "q": "ndugu",
+        "a": "the younger brother"
+    },
+    {
+        "q": "ndugu",
+        "a": "the sister"
+    },
+    {
+        "q": "dada",
+        "a": "the sister"
+    },
+    {
+        "q": "mdogo",
+        "a": "the sister"
+    },
+    {
+        "q": "mkubwa",
+        "a": "the sister"
+    },
+    {
+        "q": "dada",
+        "a": "the older sister"
+    },
+    {
+        "q": "mkubwa",
+        "a": "the older sister"
+    },
+    {
+        "q": "ndugu",
+        "a": "the older sister"
+    },
+    {
+        "q": "mdogo",
+        "a": "the younger sister"
+    },
+    {
+        "q": "ndugu",
+        "a": "the younger sister"
+    },
+    {
+        "q": "ndugu",
+        "a": "the sibling"
+    },
+    {
+        "q": "kaka",
+        "a": "the sibling"
+    },
+    {
+        "q": "dada",
+        "a": "the sibling"
+    },
+    {
+        "q": "mkubwa",
+        "a": "the sibling"
+    },
+    {
+        "q": "mdogo",
+        "a": "the sibling"
+    },
+    {
+        "q": "mkubwa",
+        "a": "the older sibling"
+    },
+    {
+        "q": "ndugu",
+        "a": "the older sibling"
+    },
+    {
+        "q": "kaka",
+        "a": "the older sibling"
+    },
+    {
+        "q": "dada",
+        "a": "the older sibling"
+    },
+    {
+        "q": "mdogo",
+        "a": "the younger sibling"
+    },
+    {
+        "q": "ndugu",
+        "a": "the younger sibling"
+    },
+    {
+        "q": "pacha",
+        "a": "the twins"
+    },
+    {
+        "q": "babu",
+        "a": "the grandfather"
+    },
+    {
+        "q": "mzee",
+        "a": "the old man"
+    },
+    {
+        "q": "bibi",
+        "a": "the grandmother"
+    },
+    {
+        "q": "mzee",
+        "a": "the old woman"
+    },
+    {
+        "q": "mjukuu",
+        "a": "the grandson"
+    },
+    {
+        "q": "mjukuu",
+        "a": "the granddaughter"
+    },
+    {
+        "q": "mjukuu",
+        "a": "the grandchild"
+    },
+    {
+        "q": "baba",
+        "a": "the uncle"
+    },
+    {
+        "q": "mjomba",
+        "a": "the uncle"
+    },
+    {
+        "q": "mjomba",
+        "a": "the mother's brother"
+    },
+    {
+        "q": "baba",
+        "a": "the father's brother"
+    },
+    {
+        "q": "ami, amu",
+        "a": "the father's brother"
+    },
+    {
+        "q": "mama",
+        "a": "the aunt"
+    },
+    {
+        "q": "shangazi",
+        "a": "the aunt"
+    },
+    {
+        "q": "mama",
+        "a": "the mother's sister"
+    },
+    {
+        "q": "shangazi",
+        "a": "the father's sister"
+    },
+    {
+        "q": "mwana",
+        "a": "the nephew"
+    },
+    {
+        "q": "mpwa",
+        "a": "the nephew"
+    },
+    {
+        "q": "mwana",
+        "a": "the niece"
+    },
+    {
+        "q": "mpwa",
+        "a": "the niece"
+    },
+    {
+        "q": "mpwa",
+        "a": "the sibling’s child"
+    },
+    {
+        "q": "mwana",
+        "a": "the sibling’s child"
+    },
+    {
+        "q": "ndugu",
+        "a": "the cousin"
+    },
+    {
+        "q": "binamu",
+        "a": "the cousin"
+    },
+    {
+        "q": "mjomba",
+        "a": "the cousin"
+    },
+    {
+        "q": "mpwa",
+        "a": "the cousin"
+    },
+    {
+        "q": "mababu",
+        "a": "the ancestors"
+    },
+    {
+        "q": "mzawa",
+        "a": "the descendants"
+    },
+    {
+        "q": "dhuria",
+        "a": "the descendants"
+    },
+    {
+        "q": "mkwe",
+        "a": "the father-in-law (of a man)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the father-in-law (of a woman)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the mother-in-law (of a man)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the mother-in-law (of a woman)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the parents-in-law"
+    },
+    {
+        "q": "mkwe",
+        "a": "the son-in-law (of a man)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the son-in-law (of a woman)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the daughter-in-law (of a man)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the daughter-in-law (of a woman)"
+    },
+    {
+        "q": "mkwe",
+        "a": "the child-in-law"
+    },
+    {
+        "q": "shemeji",
+        "a": "the sibling-in-law"
+    },
+    {
+        "q": "wifi",
+        "a": "the sibling-in-law"
+    },
+    {
+        "q": "baba wa kambo",
+        "a": "the stepfather"
+    },
+    {
+        "q": "mama wa kambo",
+        "a": "the stepmother"
+    },
+    {
+        "q": "mwana wa kambo",
+        "a": "the stepson"
+    },
+    {
+        "q": "mwana wa kambo",
+        "a": "the stepdaughter"
+    },
+    {
+        "q": "yatima",
+        "a": "the orphan"
+    },
+    {
+        "q": "mjane",
+        "a": "the widow"
+    },
+    {
+        "q": "mjane",
+        "a": "the widower"
+    },
+    {
+        "q": "jamaa",
+        "a": "the relatives"
+    },
+    {
+        "q": "ndugu",
+        "a": "the relatives"
+    },
+    {
+        "q": "familia",
+        "a": "the family"
+    },
+    {
+        "q": "jamaa",
+        "a": "the family"
+    },
+    {
+        "q": "mimi",
+        "a": "I"
+    },
+    {
+        "q": "wewe",
+        "a": "you (singular)"
+    },
+    {
+        "q": "yeye",
+        "a": "he/she/it"
+    },
+    {
+        "q": "yeye",
+        "a": "he"
+    },
+    {
+        "q": "yeye",
+        "a": "she"
+    },
+    {
+        "q": "yeye",
+        "a": "it"
+    },
+    {
+        "q": "sisi",
+        "a": "we"
+    },
+    {
+        "q": "sisi",
+        "a": "we (inclusive)"
+    },
+    {
+        "q": "sisi",
+        "a": "we (exclusive)"
+    },
+    {
+        "q": "nyinyi, ninyi",
+        "a": "you (plural)"
+    },
+    {
+        "q": "wao",
+        "a": "they"
+    },
+    {
+        "q": "mnyama",
+        "a": "the animal"
+    },
+    {
+        "q": "dume",
+        "a": "male(2)"
+    },
+    {
+        "q": "kiume",
+        "a": "male(2)"
+    },
+    {
+        "q": "jike",
+        "a": "female(2)"
+    },
+    {
+        "q": "kike",
+        "a": "female(2)"
+    },
+    {
+        "q": "mfugo",
+        "a": "the livestock"
+    },
+    {
+        "q": "malishoni",
+        "a": "the pasture"
+    },
+    {
+        "q": "machungani",
+        "a": "the pasture"
+    },
+    {
+        "q": "mchungaji",
+        "a": "the herdsman"
+    },
+    {
+        "q": "zizi",
+        "a": "the stable or stall"
+    },
+    {
+        "q": "ng’ombe",
+        "a": "the cattle"
+    },
+    {
+        "q": "fahali",
+        "a": "the bull"
+    },
+    {
+        "q": "ng’ombe",
+        "a": "the cow"
+    },
+    {
+        "q": "ndama",
+        "a": "the calf"
+    },
+    {
+        "q": "kondoo",
+        "a": "the sheep"
+    },
+    {
+        "q": "mwanakondoo",
+        "a": "the lamb"
+    },
+    {
+        "q": "nguruwe (mwitu)",
+        "a": "the boar"
+    },
+    {
+        "q": "nguruwe",
+        "a": "the pig"
+    },
+    {
+        "q": "mbuzi",
+        "a": "the goat"
+    },
+    {
+        "q": "beberu",
+        "a": "the he-goat"
+    },
+    {
+        "q": "mwanambuzi",
+        "a": "the kid"
+    },
+    {
+        "q": "farasi",
+        "a": "the horse"
+    },
+    {
+        "q": "mwanafarasi",
+        "a": "the foal or colt"
+    },
+    {
+        "q": "punda",
+        "a": "the donkey"
+    },
+    {
+        "q": "baghala",
+        "a": "the mule"
+    },
+    {
+        "q": "jogoo",
+        "a": "the cock/rooster"
+    },
+    {
+        "q": "kuku (jike)",
+        "a": "the hen"
+    },
+    {
+        "q": "kuku",
+        "a": "the chicken"
+    },
+    {
+        "q": "bata bukini",
+        "a": "the goose"
+    },
+    {
+        "q": "bata",
+        "a": "the duck"
+    },
+    {
+        "q": "kiota, kioto",
+        "a": "the nest"
+    },
+    {
+        "q": "ndege",
+        "a": "the bird"
+    },
+    {
+        "q": "shakwe",
+        "a": "the seagull"
+    },
+    {
+        "q": "kulasitara, kulastara",
+        "a": "the heron"
+    },
+    {
+        "q": "yangeyange",
+        "a": "the heron"
+    },
+    {
+        "q": "kozi",
+        "a": "the eagle"
+    },
+    {
+        "q": "mwewe",
+        "a": "the hawk"
+    },
+    {
+        "q": "tai",
+        "a": "the vulture"
+    },
+    {
+        "q": "tumbusi, tumbuzi",
+        "a": "the vulture"
+    },
+    {
+        "q": "popo",
+        "a": "the bat"
+    },
+    {
+        "q": "kasuku",
+        "a": "the parrot"
+    },
+    {
+        "q": "kunguru",
+        "a": "the crow"
+    },
+    {
+        "q": "njiwa",
+        "a": "the dove"
+    },
+    {
+        "q": "bundi",
+        "a": "the owl"
+    },
+    {
+        "q": "mnandi",
+        "a": "the cormorant"
+    },
+    {
+        "q": "mbwa",
+        "a": "the dog"
+    },
+    {
+        "q": "sungura",
+        "a": "the rabbit"
+    },
+    {
+        "q": "paka",
+        "a": "the cat"
+    },
+    {
+        "q": "panya",
+        "a": "the mouse or rat"
+    },
+    {
+        "q": "samaki",
+        "a": "the fish"
+    },
+    {
+        "q": "pezi",
+        "a": "the fin"
+    },
+    {
+        "q": "gamba, mamba",
+        "a": "the scale"
+    },
+    {
+        "q": "mamba",
+        "a": "the scale"
+    },
+    {
+        "q": "matamvua (ya samaki)",
+        "a": "the gill"
+    },
+    {
+        "q": "shavu (la samaki)",
+        "a": "the gill"
+    },
+    {
+        "q": "konokono",
+        "a": "the shell"
+    },
+    {
+        "q": "kombe",
+        "a": "the shell"
+    },
+    {
+        "q": "papa",
+        "a": "the shark"
+    },
+    {
+        "q": "pomboo",
+        "a": "the porpoise or dolphin"
+    },
+    {
+        "q": "nyangumi",
+        "a": "the whale"
+    },
+    {
+        "q": "nyenga",
+        "a": "the stingray"
+    },
+    {
+        "q": "taa (2)",
+        "a": "the stingray"
+    },
+    {
+        "q": "mkunga",
+        "a": "the freshwater eel"
+    },
+    {
+        "q": "simba",
+        "a": "the lion"
+    },
+    {
+        "q": "dubu",
+        "a": "the bear"
+    },
+    {
+        "q": "nyani",
+        "a": "the monkey"
+    },
+    {
+        "q": "kima",
+        "a": "the monkey"
+    },
+    {
+        "q": "tumbili",
+        "a": "the monkey"
+    },
+    {
+        "q": "ngedere",
+        "a": "the monkey"
+    },
+    {
+        "q": "ndovu",
+        "a": "the elephant"
+    },
+    {
+        "q": "tembo",
+        "a": "the elephant"
+    },
+    {
+        "q": "ngamia",
+        "a": "the camel"
+    },
+    {
+        "q": "mdudu",
+        "a": "the insect"
+    },
+    {
+        "q": "chawa",
+        "a": "the head louse"
+    },
+    {
+        "q": "chawa",
+        "a": "the body louse"
+    },
+    {
+        "q": "kiroboto",
+        "a": "the flea"
+    },
+    {
+        "q": "tandu",
+        "a": "the centipede"
+    },
+    {
+        "q": "jongoo",
+        "a": "the centipede"
+    },
+    {
+        "q": "nge",
+        "a": "the scorpion"
+    },
+    {
+        "q": "mende",
+        "a": "the cockroach"
+    },
+    {
+        "q": "chungu (4)",
+        "a": "the ant"
+    },
+    {
+        "q": "siafu",
+        "a": "the ant"
+    },
+    {
+        "q": "sisimizi",
+        "a": "the ant"
+    },
+    {
+        "q": "sungusungu",
+        "a": "the ant"
+    },
+    {
+        "q": "buibui",
+        "a": "the spider"
+    },
+    {
+        "q": "utando (wa buibui)",
+        "a": "the spider web"
+    },
+    {
+        "q": "nyuki",
+        "a": "the bee"
+    },
+    {
+        "q": "nta",
+        "a": "the beeswax"
+    },
+    {
+        "q": "mzinga",
+        "a": "the beehive"
+    },
+    {
+        "q": "nyigu",
+        "a": "the wasp"
+    },
+    {
+        "q": "nzi",
+        "a": "the fly"
+    },
+    {
+        "q": "usubi",
+        "a": "the sandfly or midge or gnat"
+    },
+    {
+        "q": "mbu",
+        "a": "the mosquito"
+    },
+    {
+        "q": "kamba ",
+        "a": "the prawns or shrimp"
+    },
+    {
+        "q": "mchwa",
+        "a": "the termites"
+    },
+    {
+        "q": "kupe",
+        "a": "the tick"
+    },
+    {
+        "q": "mnyoo",
+        "a": "the worm"
+    },
+    {
+        "q": "nyoka",
+        "a": "the snake"
+    },
+    {
+        "q": "sungura",
+        "a": "the hare"
+    },
+    {
+        "q": "kwale",
+        "a": "the quail"
+    },
+    {
+        "q": "tomboo, tomboro",
+        "a": "the quail"
+    },
+    {
+        "q": "kidiri",
+        "a": "the squirrel"
+    },
+    {
+        "q": "kindi",
+        "a": "the squirrel"
+    },
+    {
+        "q": "kirukanjia",
+        "a": "the squirrel"
+    },
+    {
+        "q": "kichakuro",
+        "a": "the squirrel"
+    },
+    {
+        "q": "kangaruu",
+        "a": "the kangaroo"
+    },
+    {
+        "q": "muhanga",
+        "a": "the anteater"
+    },
+    {
+        "q": "kimulimuli",
+        "a": "the firefly"
+    },
+    {
+        "q": "kinyonga",
+        "a": "the chameleon"
+    },
+    {
+        "q": "nyati",
+        "a": "the buffalo"
+    },
+    {
+        "q": "mbogo",
+        "a": "the buffalo"
+    },
+    {
+        "q": "kipepeo",
+        "a": "the butterfly"
+    },
+    {
+        "q": "panzi",
+        "a": "the grasshopper"
+    },
+    {
+        "q": "konokono",
+        "a": "the snail"
+    },
+    {
+        "q": "koa",
+        "a": "the snail"
+    },
+    {
+        "q": "chura",
+        "a": "the frog"
+    },
+    {
+        "q": "mjusi",
+        "a": "the lizard"
+    },
+    {
+        "q": "mamba",
+        "a": "the crocodile or alligator"
+    },
+    {
+        "q": "kasa",
+        "a": "the turtle"
+    },
+    {
+        "q": "ng’amba",
+        "a": "the turtle"
+    },
+    {
+        "q": "mwili",
+        "a": "the body"
+    },
+    {
+        "q": "ngozi",
+        "a": "the skin or hide"
+    },
+    {
+        "q": "nyama",
+        "a": "the flesh"
+    },
+    {
+        "q": "nywele",
+        "a": "the hair"
+    },
+    {
+        "q": "ndevu",
+        "a": "the beard"
+    },
+    {
+        "q": "malaika",
+        "a": "the body hair"
+    },
+    {
+        "q": "mavuzi",
+        "a": "the pubic hair"
+    },
+    {
+        "q": "mba",
+        "a": "the dandruff"
+    },
+    {
+        "q": "uyabisi",
+        "a": "the dandruff"
+    },
+    {
+        "q": "damu",
+        "a": "the blood"
+    },
+    {
+        "q": "mshipa",
+        "a": "the vein or artery"
+    },
+    {
+        "q": "mfupa",
+        "a": "the bone"
+    },
+    {
+        "q": "ubavu",
+        "a": "the rib"
+    },
+    {
+        "q": "upembe",
+        "a": "the horn"
+    },
+    {
+        "q": "mkia",
+        "a": "the tail"
+    },
+    {
+        "q": "mgongo",
+        "a": "the back"
+    },
+    {
+        "q": "uti (wa mgongo)",
+        "a": "the spine"
+    },
+    {
+        "q": "kichwa",
+        "a": "the head"
+    },
+    {
+        "q": "panda (2) (la uso)",
+        "a": "the temples"
+    },
+    {
+        "q": "bapa la uso",
+        "a": "the temples"
+    },
+    {
+        "q": "fuvu, fuu (la kichwa)",
+        "a": "the skull"
+    },
+    {
+        "q": "bupuru (la kichwa)",
+        "a": "the skull"
+    },
+    {
+        "q": "ubongo, bongo",
+        "a": "the brain"
+    },
+    {
+        "q": "uso",
+        "a": "the face"
+    },
+    {
+        "q": "paji",
+        "a": "the forehead"
+    },
+    {
+        "q": "taya (la chini)",
+        "a": "the jaw"
+    },
+    {
+        "q": "shavu",
+        "a": "the cheek"
+    },
+    {
+        "q": "kidevu",
+        "a": "the chin"
+    },
+    {
+        "q": "jicho",
+        "a": "the eye"
+    },
+    {
+        "q": "nyusi",
+        "a": "the eyebrow"
+    },
+    {
+        "q": "ukope",
+        "a": "the eyelid"
+    },
+    {
+        "q": "ukope",
+        "a": "the eyelash"
+    },
+    {
+        "q": "-pepesa (macho)",
+        "a": "to blink"
+    },
+    {
+        "q": "-kopesa (macho)",
+        "a": "to blink"
+    },
+    {
+        "q": "sikio",
+        "a": "the ear"
+    },
+    {
+        "q": "ndewe",
+        "a": "the earlobe"
+    },
+    {
+        "q": "nta ya sikio",
+        "a": "the earwax"
+    },
+    {
+        "q": "uchafu wa sikio",
+        "a": "the earwax"
+    },
+    {
+        "q": "pua",
+        "a": "the nose"
+    },
+    {
+        "q": "tundu la pua",
+        "a": "the nostril"
+    },
+    {
+        "q": "mwanzi wa pua",
+        "a": "the nostril"
+    },
+    {
+        "q": "kamasi",
+        "a": "the nasal mucus"
+    },
+    {
+        "q": "kinywa",
+        "a": "the mouth"
+    },
+    {
+        "q": "mdomo",
+        "a": "the mouth"
+    },
+    {
+        "q": "mdomo",
+        "a": "the beak"
+    },
+    {
+        "q": "mdomo",
+        "a": "the lip"
+    },
+    {
+        "q": "ulimi",
+        "a": "the tongue"
+    },
+    {
+        "q": "jino",
+        "a": "the tooth"
+    },
+    {
+        "q": "ufizi",
+        "a": "the gums"
+    },
+    {
+        "q": "masine",
+        "a": "the gums"
+    },
+    {
+        "q": "gego",
+        "a": "the molar tooth"
+    },
+    {
+        "q": "shingo",
+        "a": "the neck"
+    },
+    {
+        "q": "kikosi",
+        "a": "the nape of the neck"
+    },
+    {
+        "q": "koo",
+        "a": "the throat"
+    },
+    {
+        "q": "bega",
+        "a": "the shoulder"
+    },
+    {
+        "q": "kombe (la mbega)",
+        "a": "the shoulderblade"
+    },
+    {
+        "q": "mtulinga",
+        "a": "the collarbone"
+    },
+    {
+        "q": "mkono",
+        "a": "the arm"
+    },
+    {
+        "q": "kwapa",
+        "a": "the armpit"
+    },
+    {
+        "q": "kisugudi",
+        "a": "the elbow"
+    },
+    {
+        "q": "kiko ",
+        "a": "the elbow"
+    },
+    {
+        "q": "kivi",
+        "a": "the elbow"
+    },
+    {
+        "q": "kiwiko (cha mkono)",
+        "a": "the wrist"
+    },
+    {
+        "q": "kilimbili",
+        "a": "the wrist"
+    },
+    {
+        "q": "mkono",
+        "a": "the hand"
+    },
+    {
+        "q": "kiganja",
+        "a": "the palm of the hand"
+    },
+    {
+        "q": "kidole (cha mkono)",
+        "a": "the finger"
+    },
+    {
+        "q": "(kidole) gumba",
+        "a": "the thumb"
+    },
+    {
+        "q": "ukucha",
+        "a": "the fingernail"
+    },
+    {
+        "q": "ukucha",
+        "a": "the claw"
+    },
+    {
+        "q": "mguu",
+        "a": "the leg"
+    },
+    {
+        "q": "paja",
+        "a": "the thigh"
+    },
+    {
+        "q": "shavu la mguu",
+        "a": "the calf of the leg"
+    },
+    {
+        "q": "goti",
+        "a": "the knee"
+    },
+    {
+        "q": "mguu",
+        "a": "the foot"
+    },
+    {
+        "q": "kifundo cha mguu, fundo la mguu",
+        "a": "the ankle"
+    },
+    {
+        "q": "kiwiko cha mguu",
+        "a": "the ankle"
+    },
+    {
+        "q": "kisigino",
+        "a": "the heel"
+    },
+    {
+        "q": "wayo",
+        "a": "the footprint"
+    },
+    {
+        "q": "kidole (cha mguu)",
+        "a": "the toe"
+    },
+    {
+        "q": "bawa",
+        "a": "the wing"
+    },
+    {
+        "q": "unyoya",
+        "a": "the feather"
+    },
+    {
+        "q": "kifua",
+        "a": "the chest"
+    },
+    {
+        "q": "ziwa (2)",
+        "a": "the breast"
+    },
+    {
+        "q": "titi",
+        "a": "the breast"
+    },
+    {
+        "q": "titi",
+        "a": "the nipple or teat"
+    },
+    {
+        "q": "viwele",
+        "a": "the udder"
+    },
+    {
+        "q": "kitovu",
+        "a": "the navel"
+    },
+    {
+        "q": "tumbo",
+        "a": "the belly"
+    },
+    {
+        "q": "moyo",
+        "a": "the heart"
+    },
+    {
+        "q": "mapafu",
+        "a": "the lung"
+    },
+    {
+        "q": "maini",
+        "a": "the liver"
+    },
+    {
+        "q": "figo",
+        "a": "the kidney"
+    },
+    {
+        "q": "wengu",
+        "a": "the spleen"
+    },
+    {
+        "q": "tumbo",
+        "a": "the stomach"
+    },
+    {
+        "q": "utumbo",
+        "a": "the intestines or guts"
+    },
+    {
+        "q": "kiuno",
+        "a": "the waist"
+    },
+    {
+        "q": "nyonga",
+        "a": "the hip"
+    },
+    {
+        "q": "tako",
+        "a": "the buttocks"
+    },
+    {
+        "q": "ukano",
+        "a": "the sinew or tendon"
+    },
+    {
+        "q": "chupa ya uzazi",
+        "a": "the womb"
+    },
+    {
+        "q": "fuko la uzazi",
+        "a": "the womb"
+    },
+    {
+        "q": "kende",
+        "a": "the testicles"
+    },
+    {
+        "q": "pumbu",
+        "a": "the testicles"
+    },
+    {
+        "q": "mboo",
+        "a": "the penis"
+    },
+    {
+        "q": "dhakari",
+        "a": "the penis"
+    },
+    {
+        "q": "kuma",
+        "a": "the vagina"
+    },
+    {
+        "q": "uke",
+        "a": "the vulva"
+    },
+    {
+        "q": "-pumua",
+        "a": "to breathe"
+    },
+    {
+        "q": "miayo",
+        "a": "to yawn"
+    },
+    {
+        "q": "kwikiwi",
+        "a": "to hiccough"
+    },
+    {
+        "q": "-kohoa",
+        "a": "to cough"
+    },
+    {
+        "q": "chafya",
+        "a": "to sneeze"
+    },
+    {
+        "q": "jasho",
+        "a": "to perspire"
+    },
+    {
+        "q": "-tema (2) mate",
+        "a": "to spit"
+    },
+    {
+        "q": "-tapika",
+        "a": "to vomit"
+    },
+    {
+        "q": "-uma",
+        "a": "to bite"
+    },
+    {
+        "q": "-lamba, -ramba",
+        "a": "to lick"
+    },
+    {
+        "q": "udenda",
+        "a": "to dribble"
+    },
+    {
+        "q": "-lala",
+        "a": "to sleep"
+    },
+    {
+        "q": "-koroma",
+        "a": "to snore"
+    },
+    {
+        "q": "-ota (ndoto)",
+        "a": "to dream"
+    },
+    {
+        "q": "-amka",
+        "a": "to wake up"
+    },
+    {
+        "q": "-shuta",
+        "a": "to fart"
+    },
+    {
+        "q": "-jamba",
+        "a": "to fart"
+    },
+    {
+        "q": "-kojoa",
+        "a": "to piss"
+    },
+    {
+        "q": "-nya",
+        "a": "to shit"
+    },
+    {
+        "q": "-jamii",
+        "a": "to have sex"
+    },
+    {
+        "q": "-fanya mapenzi",
+        "a": "to have sex"
+    },
+    {
+        "q": "-tetema",
+        "a": "to shiver"
+    },
+    {
+        "q": "-oga",
+        "a": "to bathe"
+    },
+    {
+        "q": "-zaa",
+        "a": "to beget"
+    },
+    {
+        "q": "-zaliwa",
+        "a": "to be born"
+    },
+    {
+        "q": "mimba",
+        "a": "pregnant"
+    },
+    {
+        "q": "mjamzito",
+        "a": "pregnant"
+    },
+    {
+        "q": "-tunga mimba",
+        "a": "to conceive"
+    },
+    {
+        "q": "-pata mimba",
+        "a": "to conceive"
+    },
+    {
+        "q": "hai",
+        "a": "to be alive"
+    },
+    {
+        "q": "maisha",
+        "a": "the life"
+    },
+    {
+        "q": "-fa",
+        "a": "to die"
+    },
+    {
+        "q": "-fa",
+        "a": "dead"
+    },
+    {
+        "q": "-fa maji",
+        "a": "to drown"
+    },
+    {
+        "q": "-ua",
+        "a": "to kill"
+    },
+    {
+        "q": "maiti",
+        "a": "the corpse"
+    },
+    {
+        "q": "mzoga",
+        "a": "the carcass"
+    },
+    {
+        "q": "-zika",
+        "a": "to bury"
+    },
+    {
+        "q": "kaburi",
+        "a": "the grave"
+    },
+    {
+        "q": "nguvu",
+        "a": "strong"
+    },
+    {
+        "q": "dhaifu",
+        "a": "weak"
+    },
+    {
+        "q": "mnyonge",
+        "a": "weak"
+    },
+    {
+        "q": "afya",
+        "a": "healthy"
+    },
+    {
+        "q": "-zima (2)",
+        "a": "healthy"
+    },
+    {
+        "q": "mgonjwa",
+        "a": "sick/ill"
+    },
+    {
+        "q": "homa",
+        "a": "the fever"
+    },
+    {
+        "q": "kororo (la shingo)",
+        "a": "the goitre/goiter"
+    },
+    {
+        "q": "mafua",
+        "a": "the cold"
+    },
+    {
+        "q": "ugonjwa",
+        "a": "the disease"
+    },
+    {
+        "q": "maradhi",
+        "a": "the disease"
+    },
+    {
+        "q": "kidonda",
+        "a": "the wound or sore"
+    },
+    {
+        "q": "chubuko",
+        "a": "the bruise"
+    },
+    {
+        "q": "uvimbe",
+        "a": "the swelling"
+    },
+    {
+        "q": "mnyeo",
+        "a": "the itch"
+    },
+    {
+        "q": "mwasho",
+        "a": "the itch"
+    },
+    {
+        "q": "-kuna",
+        "a": "to scratch"
+    },
+    {
+        "q": "lengelenge",
+        "a": "the blister"
+    },
+    {
+        "q": "jipu",
+        "a": "the boil"
+    },
+    {
+        "q": "usaha",
+        "a": "the pus"
+    },
+    {
+        "q": "kovu",
+        "a": "the scar"
+    },
+    {
+        "q": "-ponya",
+        "a": "to cure"
+    },
+    {
+        "q": "mganga",
+        "a": "the physician"
+    },
+    {
+        "q": "daktari",
+        "a": "the physician"
+    },
+    {
+        "q": "dawa",
+        "a": "the medicine"
+    },
+    {
+        "q": "tiba",
+        "a": "the medicine"
+    },
+    {
+        "q": "sumu",
+        "a": "the poison"
+    },
+    {
+        "q": "-choka",
+        "a": "tired"
+    },
+    {
+        "q": "-pumzika",
+        "a": "to rest"
+    },
+    {
+        "q": "-vivu",
+        "a": "lazy"
+    },
+    {
+        "q": "upara",
+        "a": "bald"
+    },
+    {
+        "q": "kiwete",
+        "a": "lame"
+    },
+    {
+        "q": "kiziwi",
+        "a": "deaf"
+    },
+    {
+        "q": "bubu",
+        "a": "mute"
+    },
+    {
+        "q": "kipofu",
+        "a": "blind"
+    },
+    {
+        "q": "-lewa",
+        "a": "drunk"
+    },
+    {
+        "q": "uchi",
+        "a": "naked"
+    },
+    {
+        "q": "-la",
+        "a": "to eat"
+    },
+    {
+        "q": "chakula",
+        "a": "the food"
+    },
+    {
+        "q": "-bivu",
+        "a": "cooked"
+    },
+    {
+        "q": "-bichi",
+        "a": "raw"
+    },
+    {
+        "q": "-bivu",
+        "a": "ripe"
+    },
+    {
+        "q": "-bichi",
+        "a": "unripe"
+    },
+    {
+        "q": "-bovu",
+        "a": "rotten"
+    },
+    {
+        "q": "-nywa",
+        "a": "to drink"
+    },
+    {
+        "q": "njaa",
+        "a": "to be hungry"
+    },
+    {
+        "q": "njaa",
+        "a": "the famine"
+    },
+    {
+        "q": "kiu",
+        "a": "to be thirsty"
+    },
+    {
+        "q": "-amwa",
+        "a": "to suck"
+    },
+    {
+        "q": "-nyonya",
+        "a": "to suck"
+    },
+    {
+        "q": "-tafuna",
+        "a": "to chew"
+    },
+    {
+        "q": "-meza",
+        "a": "to swallow"
+    },
+    {
+        "q": "-kaba",
+        "a": "to choke"
+    },
+    {
+        "q": "-zuia pumzi",
+        "a": "to choke"
+    },
+    {
+        "q": "-katia pumzi",
+        "a": "to choke"
+    },
+    {
+        "q": "-pika",
+        "a": "to cook"
+    },
+    {
+        "q": "-chemka",
+        "a": "to boil"
+    },
+    {
+        "q": "-kaanga",
+        "a": "to roast or fry"
+    },
+    {
+        "q": "-choma",
+        "a": "to roast or fry"
+    },
+    {
+        "q": "-oka",
+        "a": "to bake"
+    },
+    {
+        "q": "oveni",
+        "a": "the oven"
+    },
+    {
+        "q": "kiokeo",
+        "a": "the oven"
+    },
+    {
+        "q": "chungu ",
+        "a": "the pot"
+    },
+    {
+        "q": "sufuria",
+        "a": "the pot"
+    },
+    {
+        "q": "birika",
+        "a": "the kettle"
+    },
+    {
+        "q": "kikaango",
+        "a": "the pan"
+    },
+    {
+        "q": "bakuli",
+        "a": "the dish"
+    },
+    {
+        "q": "sahani",
+        "a": "the plate"
+    },
+    {
+        "q": "tasa",
+        "a": "the bowl"
+    },
+    {
+        "q": "gudulia",
+        "a": "the jug/pitcher"
+    },
+    {
+        "q": "jagi",
+        "a": "the jug/pitcher"
+    },
+    {
+        "q": "kikombe",
+        "a": "the cup"
+    },
+    {
+        "q": "kisahani",
+        "a": "the saucer"
+    },
+    {
+        "q": "kijiko",
+        "a": "the spoon"
+    },
+    {
+        "q": "kisu",
+        "a": "the knife"
+    },
+    {
+        "q": "uma",
+        "a": "the fork"
+    },
+    {
+        "q": "koleo",
+        "a": "the tongs"
+    },
+    {
+        "q": "chakula",
+        "a": "the meal"
+    },
+    {
+        "q": "kiamshakinywa, chamshakinywa",
+        "a": "the breakfast"
+    },
+    {
+        "q": "chakula cha asubuhi",
+        "a": "the breakfast"
+    },
+    {
+        "q": "chakula cha mchana",
+        "a": "the lunch"
+    },
+    {
+        "q": "chakula cha jioni",
+        "a": "the dinner"
+    },
+    {
+        "q": "chakula cha usiku",
+        "a": "the supper"
+    },
+    {
+        "q": "-menya",
+        "a": "to peel"
+    },
+    {
+        "q": "-chuja",
+        "a": "to sieve or to strain"
+    },
+    {
+        "q": "-chekecha",
+        "a": "to sieve or to strain"
+    },
+    {
+        "q": "-paa, -para",
+        "a": "to scrape"
+    },
+    {
+        "q": "-kwangua, -kwangura",
+        "a": "to scrape"
+    },
+    {
+        "q": "-changanya",
+        "a": "to stir or to mix"
+    },
+    {
+        "q": "-koroga",
+        "a": "to stir or to mix"
+    },
+    {
+        "q": "-vuruga",
+        "a": "to stir or to mix"
+    },
+    {
+        "q": "mkate",
+        "a": "the bread"
+    },
+    {
+        "q": "kinyunya",
+        "a": "the dough"
+    },
+    {
+        "q": "-kanda",
+        "a": "to knead"
+    },
+    {
+        "q": "unga",
+        "a": "the flour"
+    },
+    {
+        "q": "-saga",
+        "a": "to crush or to grind"
+    },
+    {
+        "q": "-ponda",
+        "a": "to crush or to grind"
+    },
+    {
+        "q": "-twanga",
+        "a": "to crush or to grind"
+    },
+    {
+        "q": "kinu",
+        "a": "the mill"
+    },
+    {
+        "q": "kinu",
+        "a": "the mortar"
+    },
+    {
+        "q": "mchi",
+        "a": "the pestle"
+    },
+    {
+        "q": "nyama",
+        "a": "the meat"
+    },
+    {
+        "q": "soseji",
+        "a": "the sausage"
+    },
+    {
+        "q": "supu",
+        "a": "the soup"
+    },
+    {
+        "q": "mboga",
+        "a": "the vegetables"
+    },
+    {
+        "q": "haragwe",
+        "a": "the bean"
+    },
+    {
+        "q": "kiazi",
+        "a": "the potato"
+    },
+    {
+        "q": "mbatata",
+        "a": "the potato"
+    },
+    {
+        "q": "tunda",
+        "a": "the fruit"
+    },
+    {
+        "q": "kicha",
+        "a": "the bunch"
+    },
+    {
+        "q": "mkungu (wa ndizi)",
+        "a": "the bunch"
+    },
+    {
+        "q": "tini",
+        "a": "the fig"
+    },
+    {
+        "q": "zabibu",
+        "a": "the grape"
+    },
+    {
+        "q": "lozi",
+        "a": "the nut"
+    },
+    {
+        "q": "korosho",
+        "a": "the nut"
+    },
+    {
+        "q": "karanga",
+        "a": "the nut"
+    },
+    {
+        "q": "njugu",
+        "a": "the nut"
+    },
+    {
+        "q": "njugu mawe",
+        "a": "the nut"
+    },
+    {
+        "q": "kungu manga",
+        "a": "the nut"
+    },
+    {
+        "q": "kungu",
+        "a": "the nut"
+    },
+    {
+        "q": "popoo",
+        "a": "the nut"
+    },
+    {
+        "q": "chikichi",
+        "a": "the nut"
+    },
+    {
+        "q": "zeituni",
+        "a": "the olive"
+    },
+    {
+        "q": "mafuta",
+        "a": "the oil"
+    },
+    {
+        "q": "mafuta",
+        "a": "the grease or fat"
+    },
+    {
+        "q": "chumvi",
+        "a": "the salt"
+    },
+    {
+        "q": "pilipili manga",
+        "a": "the pepper"
+    },
+    {
+        "q": "pilipili",
+        "a": "the chili pepper"
+    },
+    {
+        "q": "pilipili hoho",
+        "a": "the chili pepper"
+    },
+    {
+        "q": "asali",
+        "a": "the honey"
+    },
+    {
+        "q": "sukari",
+        "a": "the sugar"
+    },
+    {
+        "q": "maziwa",
+        "a": "the milk"
+    },
+    {
+        "q": "-kama",
+        "a": "to milk"
+    },
+    {
+        "q": "jibini",
+        "a": "the cheese"
+    },
+    {
+        "q": "chizi",
+        "a": "the cheese"
+    },
+    {
+        "q": "siagi",
+        "a": "the butter"
+    },
+    {
+        "q": "kinywaji",
+        "a": "the drink"
+    },
+    {
+        "q": "kangara",
+        "a": "the mead"
+    },
+    {
+        "q": "divai",
+        "a": "the wine"
+    },
+    {
+        "q": "mvinyo",
+        "a": "the wine"
+    },
+    {
+        "q": "pombe",
+        "a": "the beer"
+    },
+    {
+        "q": "bia",
+        "a": "the beer"
+    },
+    {
+        "q": "kileo",
+        "a": "the fermented drink"
+    },
+    {
+        "q": "yai",
+        "a": "the egg"
+    },
+    {
+        "q": "kiini cha yai",
+        "a": "the yolk"
+    },
+    {
+        "q": "-vaa",
+        "a": "to put on"
+    },
+    {
+        "q": "nguo",
+        "a": "the clothing or clothes"
+    },
+    {
+        "q": "mavazi",
+        "a": "the clothing or clothes"
+    },
+    {
+        "q": "mshonaji",
+        "a": "the tailor"
+    },
+    {
+        "q": "nguo",
+        "a": "the cloth"
+    },
+    {
+        "q": "kitambaa",
+        "a": "the cloth"
+    },
+    {
+        "q": "sufu",
+        "a": "the wool"
+    },
+    {
+        "q": "unyoya",
+        "a": "the wool"
+    },
+    {
+        "q": "kitani",
+        "a": "the linen"
+    },
+    {
+        "q": "pamba",
+        "a": "the cotton"
+    },
+    {
+        "q": "hariri",
+        "a": "the silk"
+    },
+    {
+        "q": "kitambaa gandamizo",
+        "a": "the felt"
+    },
+    {
+        "q": "unyoya",
+        "a": "the fur"
+    },
+    {
+        "q": "ngozi",
+        "a": "the leather"
+    },
+    {
+        "q": "-sokota nyuzi",
+        "a": "to spin"
+    },
+    {
+        "q": "pia",
+        "a": "the spindle"
+    },
+    {
+        "q": "-fuma",
+        "a": "to weave"
+    },
+    {
+        "q": "kitanda cha mfumi",
+        "a": "the loom"
+    },
+    {
+        "q": "-shona",
+        "a": "to sew"
+    },
+    {
+        "q": "sindano",
+        "a": "the needle"
+    },
+    {
+        "q": "maharazi",
+        "a": "the awl"
+    },
+    {
+        "q": "uzi",
+        "a": "the thread"
+    },
+    {
+        "q": "-tia rangi",
+        "a": "to dye"
+    },
+    {
+        "q": "joho",
+        "a": "the cloak"
+    },
+    {
+        "q": "gauni",
+        "a": "the (woman's) dress"
+    },
+    {
+        "q": "kanzu",
+        "a": "the (woman's) dress"
+    },
+    {
+        "q": "koti",
+        "a": "the coat"
+    },
+    {
+        "q": "shati",
+        "a": "the shirt"
+    },
+    {
+        "q": "kimau",
+        "a": "the shirt"
+    },
+    {
+        "q": "ukosi",
+        "a": "the collar"
+    },
+    {
+        "q": "kola",
+        "a": "the collar"
+    },
+    {
+        "q": "sketi",
+        "a": "the skirt"
+    },
+    {
+        "q": "suruali",
+        "a": "the trousers"
+    },
+    {
+        "q": "soksi",
+        "a": "the sock or stocking"
+    },
+    {
+        "q": "kiatu",
+        "a": "the shoe"
+    },
+    {
+        "q": "buti",
+        "a": "the boot"
+    },
+    {
+        "q": "mshona viatu",
+        "a": "the shoemaker"
+    },
+    {
+        "q": "kofia",
+        "a": "the hat or cap"
+    },
+    {
+        "q": "chepeo",
+        "a": "the hat or cap"
+    },
+    {
+        "q": "mkanda, ukanda",
+        "a": "the belt"
+    },
+    {
+        "q": "glavu, glovu",
+        "a": "the glove"
+    },
+    {
+        "q": "shela",
+        "a": "the veil"
+    },
+    {
+        "q": "sitara, stara",
+        "a": "the veil"
+    },
+    {
+        "q": "barakoa",
+        "a": "the veil"
+    },
+    {
+        "q": "ukaya",
+        "a": "the veil"
+    },
+    {
+        "q": "buibui",
+        "a": "the veil"
+    },
+    {
+        "q": "mfuko",
+        "a": "the pocket"
+    },
+    {
+        "q": "kifungo",
+        "a": "the button"
+    },
+    {
+        "q": "pini",
+        "a": "the pin"
+    },
+    {
+        "q": "pambo",
+        "a": "the ornament or adornment"
+    },
+    {
+        "q": "urembo",
+        "a": "the ornament or adornment"
+    },
+    {
+        "q": "kito",
+        "a": "the jewel"
+    },
+    {
+        "q": "pete",
+        "a": "the ring"
+    },
+    {
+        "q": "bangili, bangiri",
+        "a": "the bracelet"
+    },
+    {
+        "q": "mkufu",
+        "a": "the necklace"
+    },
+    {
+        "q": "ushanga",
+        "a": "the bead"
+    },
+    {
+        "q": "hereni, herini",
+        "a": "the earring"
+    },
+    {
+        "q": "kipuli",
+        "a": "the earring"
+    },
+    {
+        "q": "kilemba",
+        "a": "the headband or headdress"
+    },
+    {
+        "q": "dusumali",
+        "a": "the headband or headdress"
+    },
+    {
+        "q": "chale",
+        "a": "the tattoo"
+    },
+    {
+        "q": "chanjo",
+        "a": "the tattoo"
+    },
+    {
+        "q": "leso",
+        "a": "the handkerchief or rag"
+    },
+    {
+        "q": "taulo",
+        "a": "the towel"
+    },
+    {
+        "q": "kitana",
+        "a": "the comb"
+    },
+    {
+        "q": "chanuo",
+        "a": "the comb"
+    },
+    {
+        "q": "burashi, brashi",
+        "a": "the brush"
+    },
+    {
+        "q": "msuko",
+        "a": "the plait/braid"
+    },
+    {
+        "q": "msongo",
+        "a": "the plait/braid"
+    },
+    {
+        "q": "wembe",
+        "a": "the razor"
+    },
+    {
+        "q": "dawa ya kupaka",
+        "a": "the ointment"
+    },
+    {
+        "q": "sabuni",
+        "a": "the soap"
+    },
+    {
+        "q": "kioo",
+        "a": "the mirror"
+    },
+    {
+        "q": "kiatu cha theluji",
+        "a": "the snowshoe"
+    },
+    {
+        "q": "skii",
+        "a": "the snowshoe"
+    },
+    {
+        "q": "-kaa",
+        "a": "to live"
+    },
+    {
+        "q": "-ishi",
+        "a": "to live"
+    },
+    {
+        "q": "nyumba",
+        "a": "the house"
+    },
+    {
+        "q": "kibanda",
+        "a": "the hut"
+    },
+    {
+        "q": "hema",
+        "a": "the tent"
+    },
+    {
+        "q": "ua ",
+        "a": "the yard or court"
+    },
+    {
+        "q": "jiko",
+        "a": "the cookhouse"
+    },
+    {
+        "q": "chumba",
+        "a": "the room"
+    },
+    {
+        "q": "mlango",
+        "a": "the door or gate"
+    },
+    {
+        "q": "mhimili (wa mlango)",
+        "a": "the doorpost"
+    },
+    {
+        "q": "mwimo",
+        "a": "the doorpost"
+    },
+    {
+        "q": "kitasa",
+        "a": "the lock"
+    },
+    {
+        "q": "komeo",
+        "a": "the latch or door-bolt"
+    },
+    {
+        "q": "kufuli",
+        "a": "the padlock"
+    },
+    {
+        "q": "ufunguo",
+        "a": "the key"
+    },
+    {
+        "q": "dirisha",
+        "a": "the window"
+    },
+    {
+        "q": "sakafu",
+        "a": "the floor"
+    },
+    {
+        "q": "ukuta",
+        "a": "the wall"
+    },
+    {
+        "q": "jiko",
+        "a": "the fireplace"
+    },
+    {
+        "q": "jiko",
+        "a": "the stove"
+    },
+    {
+        "q": "stovu",
+        "a": "the stove"
+    },
+    {
+        "q": "dohani",
+        "a": "the chimney"
+    },
+    {
+        "q": "ngazi",
+        "a": "the ladder"
+    },
+    {
+        "q": "kitanda",
+        "a": "the bed"
+    },
+    {
+        "q": "mto (2)",
+        "a": "the pillow"
+    },
+    {
+        "q": "blangeti, blanketi",
+        "a": "the blanket"
+    },
+    {
+        "q": "kiti",
+        "a": "the chair"
+    },
+    {
+        "q": "meza",
+        "a": "the table"
+    },
+    {
+        "q": "taa ",
+        "a": "the lamp or torch"
+    },
+    {
+        "q": "mshumaa",
+        "a": "the candle"
+    },
+    {
+        "q": "rafu",
+        "a": "the shelf"
+    },
+    {
+        "q": "hori",
+        "a": "the trough"
+    },
+    {
+        "q": "paa",
+        "a": "the roof"
+    },
+    {
+        "q": "maezeko",
+        "a": "the thatch"
+    },
+    {
+        "q": "mwamba (2)",
+        "a": "the ridgepole"
+    },
+    {
+        "q": "pau, pao",
+        "a": "the rafter"
+    },
+    {
+        "q": "kombamoyo",
+        "a": "the rafter"
+    },
+    {
+        "q": "boriti",
+        "a": "the beam"
+    },
+    {
+        "q": "nguzo",
+        "a": "the post or pole"
+    },
+    {
+        "q": "mhimili",
+        "a": "the post or pole"
+    },
+    {
+        "q": "mwimo",
+        "a": "the post or pole"
+    },
+    {
+        "q": "ubao",
+        "a": "the board"
+    },
+    {
+        "q": "tao",
+        "a": "the arch"
+    },
+    {
+        "q": "mwashi",
+        "a": "the mason"
+    },
+    {
+        "q": "tofali",
+        "a": "the brick"
+    },
+    {
+        "q": "mota (2)",
+        "a": "the mortar(2)"
+    },
+    {
+        "q": "chokaa",
+        "a": "the mortar(2)"
+    },
+    {
+        "q": "kambi",
+        "a": "the camp"
+    },
+    {
+        "q": "ago",
+        "a": "the camp"
+    },
+    {
+        "q": "kitanda cha bembea",
+        "a": "the hammock"
+    },
+    {
+        "q": "mkulima",
+        "a": "the farmer"
+    },
+    {
+        "q": "shamba",
+        "a": "the field"
+    },
+    {
+        "q": "bustani",
+        "a": "the garden"
+    },
+    {
+        "q": "-lima",
+        "a": "to cultivate"
+    },
+    {
+        "q": "ua ",
+        "a": "the fence"
+    },
+    {
+        "q": "mfereji",
+        "a": "the ditch"
+    },
+    {
+        "q": "plau",
+        "a": "to plough/plow"
+    },
+    {
+        "q": "mfuo",
+        "a": "the furrow"
+    },
+    {
+        "q": "-chimba",
+        "a": "to dig"
+    },
+    {
+        "q": "sepetu, sepeto",
+        "a": "the spade"
+    },
+    {
+        "q": "beleshi",
+        "a": "the spade"
+    },
+    {
+        "q": "koleo",
+        "a": "the shovel"
+    },
+    {
+        "q": "beleshi",
+        "a": "the shovel"
+    },
+    {
+        "q": "shepe",
+        "a": "the shovel"
+    },
+    {
+        "q": "sepetu, sepeto",
+        "a": "the shovel"
+    },
+    {
+        "q": "jembe",
+        "a": "the hoe"
+    },
+    {
+        "q": "uma",
+        "a": "the fork(2)/pitchfork"
+    },
+    {
+        "q": "reki",
+        "a": "the rake"
+    },
+    {
+        "q": "-sia",
+        "a": "to sow"
+    },
+    {
+        "q": "-panda ",
+        "a": "to sow"
+    },
+    {
+        "q": "mbegu",
+        "a": "the seed"
+    },
+    {
+        "q": "-fyeka",
+        "a": "to mow"
+    },
+    {
+        "q": "mundu",
+        "a": "the sickle or scythe"
+    },
+    {
+        "q": "-puta",
+        "a": "to thresh"
+    },
+    {
+        "q": "uga (wa kupuria nafaka)",
+        "a": "the threshing-floor"
+    },
+    {
+        "q": "mavuno",
+        "a": "the harvest"
+    },
+    {
+        "q": "nafaka",
+        "a": "the grain"
+    },
+    {
+        "q": "ngano",
+        "a": "the wheat"
+    },
+    {
+        "q": "shayiri",
+        "a": "the barley"
+    },
+    {
+        "q": "mahindi",
+        "a": "the maize/corn"
+    },
+    {
+        "q": "muhindi",
+        "a": "the maize/corn"
+    },
+    {
+        "q": "wali",
+        "a": "the rice"
+    },
+    {
+        "q": "mchele",
+        "a": "the rice"
+    },
+    {
+        "q": "mpunga",
+        "a": "the rice"
+    },
+    {
+        "q": "jani",
+        "a": "the grass"
+    },
+    {
+        "q": "nyasi",
+        "a": "the grass"
+    },
+    {
+        "q": "mmea",
+        "a": "the plant"
+    },
+    {
+        "q": "-panda ",
+        "a": "to plant"
+    },
+    {
+        "q": "mzizi",
+        "a": "the root"
+    },
+    {
+        "q": "tawi",
+        "a": "the branch"
+    },
+    {
+        "q": "jani",
+        "a": "the leaf"
+    },
+    {
+        "q": "ua (2)",
+        "a": "the flower"
+    },
+    {
+        "q": "mti",
+        "a": "the tree"
+    },
+    {
+        "q": "muoki",
+        "a": "the oak"
+    },
+    {
+        "q": "mbetula",
+        "a": "the birch"
+    },
+    {
+        "q": "msonobari",
+        "a": "the pine"
+    },
+    {
+        "q": "msonobari",
+        "a": "the fir"
+    },
+    {
+        "q": "mzabibu",
+        "a": "the vine"
+    },
+    {
+        "q": "tumbaku",
+        "a": "the tobacco"
+    },
+    {
+        "q": "-vuta (sigara)",
+        "a": "to smoke"
+    },
+    {
+        "q": "kiko (2)",
+        "a": "the pipe"
+    },
+    {
+        "q": "kisiki",
+        "a": "the tree stump"
+    },
+    {
+        "q": "shina",
+        "a": "the tree trunk"
+    },
+    {
+        "q": "panda ",
+        "a": "the forked branch"
+    },
+    {
+        "q": "gome",
+        "a": "the bark"
+    },
+    {
+        "q": "utomvu",
+        "a": "the sap"
+    },
+    {
+        "q": "mnazi",
+        "a": "the palm tree"
+    },
+    {
+        "q": "mtende",
+        "a": "the palm tree"
+    },
+    {
+        "q": "mchikichi",
+        "a": "the palm tree"
+    },
+    {
+        "q": "muwaa",
+        "a": "the palm tree"
+    },
+    {
+        "q": "mwale",
+        "a": "the palm tree"
+    },
+    {
+        "q": "nazi",
+        "a": "the coconut"
+    },
+    {
+        "q": "dafu",
+        "a": "the coconut"
+    },
+    {
+        "q": "chungwa",
+        "a": "the citrus fruit"
+    },
+    {
+        "q": "limau",
+        "a": "the citrus fruit"
+    },
+    {
+        "q": "ndimu",
+        "a": "the citrus fruit"
+    },
+    {
+        "q": "chenza",
+        "a": "the citrus fruit"
+    },
+    {
+        "q": "balungi",
+        "a": "the citrus fruit"
+    },
+    {
+        "q": "ndizi",
+        "a": "the banana"
+    },
+    {
+        "q": "mlandawa",
+        "a": "the banyan"
+    },
+    {
+        "q": "kiazi",
+        "a": "the sweet potato"
+    },
+    {
+        "q": "kiazi kitamu",
+        "a": "the sweet potato"
+    },
+    {
+        "q": "mtama",
+        "a": "the millet or sorghum"
+    },
+    {
+        "q": "wimbi (2)",
+        "a": "the millet or sorghum"
+    },
+    {
+        "q": "ulezi",
+        "a": "the millet or sorghum"
+    },
+    {
+        "q": "uwele",
+        "a": "the millet or sorghum"
+    },
+    {
+        "q": "kiazi kikuu",
+        "a": "the yam"
+    },
+    {
+        "q": "muhogo",
+        "a": "the cassava/manioc"
+    },
+    {
+        "q": "mung’unye, mumunya",
+        "a": "the gourd"
+    },
+    {
+        "q": "bodwe",
+        "a": "the gourd"
+    },
+    {
+        "q": "kibuyu",
+        "a": "the gourd"
+    },
+    {
+        "q": "mboko",
+        "a": "the gourd"
+    },
+    {
+        "q": "boga",
+        "a": "the pumpkin or squash"
+    },
+    {
+        "q": "mwanzi",
+        "a": "the bamboo"
+    },
+    {
+        "q": "muwa",
+        "a": "the sugar cane"
+    },
+    {
+        "q": "utupa",
+        "a": "the fish poison"
+    },
+    {
+        "q": "uyoga",
+        "a": "the mushroom"
+    },
+    {
+        "q": "jani",
+        "a": "the needle(2)"
+    },
+    {
+        "q": "sonobari",
+        "a": "the cone"
+    },
+    {
+        "q": "-fanya",
+        "a": "to do"
+    },
+    {
+        "q": "-tenda",
+        "a": "to do"
+    },
+    {
+        "q": "-fanya",
+        "a": "to make"
+    },
+    {
+        "q": "-tengeneza",
+        "a": "to make"
+    },
+    {
+        "q": "kazi",
+        "a": "the work"
+    },
+    {
+        "q": "-pinda",
+        "a": "to bend"
+    },
+    {
+        "q": "-kunja",
+        "a": "to fold"
+    },
+    {
+        "q": "-funga",
+        "a": "to tie"
+    },
+    {
+        "q": "-fungua",
+        "a": "to untie"
+    },
+    {
+        "q": "mnyororo",
+        "a": "the chain"
+    },
+    {
+        "q": "mkufu",
+        "a": "the chain"
+    },
+    {
+        "q": "kamba (2)",
+        "a": "the rope"
+    },
+    {
+        "q": "fundo",
+        "a": "the knot"
+    },
+    {
+        "q": "-piga",
+        "a": "to strike or hit or beat"
+    },
+    {
+        "q": "-gongagonga",
+        "a": "to pound"
+    },
+    {
+        "q": "-kata",
+        "a": "to cut"
+    },
+    {
+        "q": "-kata",
+        "a": "to cut down"
+    },
+    {
+        "q": "-tema  kuni",
+        "a": "to chop"
+    },
+    {
+        "q": "-chanja, -changa",
+        "a": "to chop"
+    },
+    {
+        "q": "-choma",
+        "a": "to stab"
+    },
+    {
+        "q": "kisu",
+        "a": "the knife"
+    },
+    {
+        "q": "mkasi, makasi",
+        "a": "the scissors or shears"
+    },
+    {
+        "q": "shoka",
+        "a": "the axe/ax"
+    },
+    {
+        "q": "tezo",
+        "a": "the adze"
+    },
+    {
+        "q": "-vunja",
+        "a": "to break"
+    },
+    {
+        "q": "-vunjika",
+        "a": "broken"
+    },
+    {
+        "q": "-pasua",
+        "a": "to split"
+    },
+    {
+        "q": "-chana",
+        "a": "to tear"
+    },
+    {
+        "q": "-rarua",
+        "a": "to tear"
+    },
+    {
+        "q": "-pasua",
+        "a": "to tear"
+    },
+    {
+        "q": "-chuna",
+        "a": "to skin"
+    },
+    {
+        "q": "-fikicha",
+        "a": "to rub"
+    },
+    {
+        "q": "-chua",
+        "a": "to rub"
+    },
+    {
+        "q": "-futa",
+        "a": "to wipe"
+    },
+    {
+        "q": "-pangusa",
+        "a": "to wipe"
+    },
+    {
+        "q": "-tanua",
+        "a": "to stretch"
+    },
+    {
+        "q": "-vuta",
+        "a": "to pull"
+    },
+    {
+        "q": "-tanda, -tandika, -tandaza",
+        "a": "to spread out"
+    },
+    {
+        "q": "-angika",
+        "a": "to hang up"
+    },
+    {
+        "q": "-gandamiza",
+        "a": "to press"
+    },
+    {
+        "q": "-kama",
+        "a": "to squeeze"
+    },
+    {
+        "q": "-minya",
+        "a": "to squeeze"
+    },
+    {
+        "q": "-songa",
+        "a": "to squeeze"
+    },
+    {
+        "q": "-mimina",
+        "a": "to pour"
+    },
+    {
+        "q": "-mwaga",
+        "a": "to pour"
+    },
+    {
+        "q": "-nawa",
+        "a": "to wash"
+    },
+    {
+        "q": "-oga",
+        "a": "to wash"
+    },
+    {
+        "q": "-osha",
+        "a": "to wash"
+    },
+    {
+        "q": "-fua",
+        "a": "to wash"
+    },
+    {
+        "q": "-fagia",
+        "a": "to sweep"
+    },
+    {
+        "q": "ufagio",
+        "a": "the broom"
+    },
+    {
+        "q": "kifaa",
+        "a": "the tool"
+    },
+    {
+        "q": "ala",
+        "a": "the tool"
+    },
+    {
+        "q": "chombo",
+        "a": "the tool"
+    },
+    {
+        "q": "zana",
+        "a": "the tool"
+    },
+    {
+        "q": "seremala",
+        "a": "the carpenter"
+    },
+    {
+        "q": "-jenga",
+        "a": "to build"
+    },
+    {
+        "q": "-pekecha",
+        "a": "to bore"
+    },
+    {
+        "q": "-toboa",
+        "a": "to bore"
+    },
+    {
+        "q": "-komba",
+        "a": "to hollow out"
+    },
+    {
+        "q": "-fukua",
+        "a": "to hollow out"
+    },
+    {
+        "q": "msumeno",
+        "a": "the saw"
+    },
+    {
+        "q": "nyundo",
+        "a": "the hammer"
+    },
+    {
+        "q": "msumari",
+        "a": "the nail"
+    },
+    {
+        "q": "gundi",
+        "a": "the glue"
+    },
+    {
+        "q": "gamu",
+        "a": "the glue"
+    },
+    {
+        "q": "gluu",
+        "a": "the glue"
+    },
+    {
+        "q": "ulimbo",
+        "a": "the glue"
+    },
+    {
+        "q": "sherisi",
+        "a": "the glue"
+    },
+    {
+        "q": "mhunzi (wa chuma)",
+        "a": "the blacksmith"
+    },
+    {
+        "q": "-fua",
+        "a": "to forge"
+    },
+    {
+        "q": "fuawe",
+        "a": "the anvil"
+    },
+    {
+        "q": "-subu",
+        "a": "to cast"
+    },
+    {
+        "q": "-kalibu",
+        "a": "to cast"
+    },
+    {
+        "q": "dhahabu",
+        "a": "the gold"
+    },
+    {
+        "q": "fedha",
+        "a": "the silver"
+    },
+    {
+        "q": "shaba",
+        "a": "the copper"
+    },
+    {
+        "q": "chuma",
+        "a": "the iron"
+    },
+    {
+        "q": "risasi",
+        "a": "the lead"
+    },
+    {
+        "q": "bati",
+        "a": "the tin or tinplate"
+    },
+    {
+        "q": "mfinyanzi",
+        "a": "the potter"
+    },
+    {
+        "q": "-finyanga",
+        "a": "to mould/mold"
+    },
+    {
+        "q": "-umba",
+        "a": "to mould/mold"
+    },
+    {
+        "q": "udongo (wa mfinyanzi)",
+        "a": "the clay"
+    },
+    {
+        "q": "kioo",
+        "a": "the glass"
+    },
+    {
+        "q": "-fuma",
+        "a": "to weave or plait/braid"
+    },
+    {
+        "q": "-suka",
+        "a": "to weave or plait/braid"
+    },
+    {
+        "q": "kikapu",
+        "a": "the basket"
+    },
+    {
+        "q": "mkeka",
+        "a": "the mat"
+    },
+    {
+        "q": "jamvi",
+        "a": "the mat"
+    },
+    {
+        "q": "zulia",
+        "a": "the rug"
+    },
+    {
+        "q": "kipepeo",
+        "a": "the fan"
+    },
+    {
+        "q": "feni",
+        "a": "the fan"
+    },
+    {
+        "q": "-pepea",
+        "a": "to fan"
+    },
+    {
+        "q": "-chonga",
+        "a": "to carve"
+    },
+    {
+        "q": "-nakshi, -nakishi",
+        "a": "to carve"
+    },
+    {
+        "q": "mchongaji (wa sanamu)",
+        "a": "the sculptor"
+    },
+    {
+        "q": "sanamu",
+        "a": "the statue"
+    },
+    {
+        "q": "patasi",
+        "a": "the chisel"
+    },
+    {
+        "q": "chembeo",
+        "a": "the chisel"
+    },
+    {
+        "q": "bumarengi",
+        "a": "the boomerang"
+    },
+    {
+        "q": "rangi",
+        "a": "the paint"
+    },
+    {
+        "q": "-tia rangi",
+        "a": "to paint"
+    },
+    {
+        "q": "-teka maji",
+        "a": "to draw water"
+    },
+    {
+        "q": "kigingi",
+        "a": "the peg"
+    },
+    {
+        "q": "mambo",
+        "a": "the peg"
+    },
+    {
+        "q": "kinoo",
+        "a": "the whetstone"
+    },
+    {
+        "q": "-sogeza",
+        "a": "to move"
+    },
+    {
+        "q": "-geuza",
+        "a": "to turn"
+    },
+    {
+        "q": "-pindua",
+        "a": "to turn"
+    },
+    {
+        "q": "-geuka",
+        "a": "to turn around"
+    },
+    {
+        "q": "-pinduka",
+        "a": "to turn around"
+    },
+    {
+        "q": "-viringisha",
+        "a": "to wrap"
+    },
+    {
+        "q": "-bingirisha",
+        "a": "to roll"
+    },
+    {
+        "q": "-angusha",
+        "a": "to drop"
+    },
+    {
+        "q": "-sokota",
+        "a": "to twist"
+    },
+    {
+        "q": "-songa",
+        "a": "to twist"
+    },
+    {
+        "q": "-inuka",
+        "a": "to rise"
+    },
+    {
+        "q": "-toka",
+        "a": "to rise"
+    },
+    {
+        "q": "-amka",
+        "a": "to rise"
+    },
+    {
+        "q": "-chomoza",
+        "a": "to rise"
+    },
+    {
+        "q": "-inua",
+        "a": "to raise or lift"
+    },
+    {
+        "q": "-anguka",
+        "a": "to fall"
+    },
+    {
+        "q": "-tona",
+        "a": "to drip"
+    },
+    {
+        "q": "-dondoka",
+        "a": "to drip"
+    },
+    {
+        "q": "-rusha",
+        "a": "to throw"
+    },
+    {
+        "q": "-tupa",
+        "a": "to throw"
+    },
+    {
+        "q": "-kamata",
+        "a": "to catch"
+    },
+    {
+        "q": "-tikisa",
+        "a": "to shake"
+    },
+    {
+        "q": "-tingisha",
+        "a": "to shake"
+    },
+    {
+        "q": "-tiririka",
+        "a": "to flow"
+    },
+    {
+        "q": "-zama",
+        "a": "to sink"
+    },
+    {
+        "q": "-elea",
+        "a": "to float"
+    },
+    {
+        "q": "-ogelea",
+        "a": "to swim"
+    },
+    {
+        "q": "mbizi",
+        "a": "to dive"
+    },
+    {
+        "q": "-rushia (maji)",
+        "a": "to splash"
+    },
+    {
+        "q": "-endesha kwa tanga",
+        "a": "to sail"
+    },
+    {
+        "q": "-ruka",
+        "a": "to fly"
+    },
+    {
+        "q": "-vuma",
+        "a": "to blow"
+    },
+    {
+        "q": "-puliza",
+        "a": "to blow"
+    },
+    {
+        "q": "-tambaa",
+        "a": "to crawl"
+    },
+    {
+        "q": "-piga magoti",
+        "a": "to kneel"
+    },
+    {
+        "q": "-chutama",
+        "a": "to crouch"
+    },
+    {
+        "q": "-kunyata",
+        "a": "to crouch"
+    },
+    {
+        "q": "-chuchumaa",
+        "a": "to crouch"
+    },
+    {
+        "q": "-teleza",
+        "a": "to slide or slip"
+    },
+    {
+        "q": "-serereka",
+        "a": "to slide or slip"
+    },
+    {
+        "q": "-ruka",
+        "a": "to jump"
+    },
+    {
+        "q": "-chupa",
+        "a": "to jump"
+    },
+    {
+        "q": "teke",
+        "a": "to kick"
+    },
+    {
+        "q": "-cheza ngoma",
+        "a": "to dance"
+    },
+    {
+        "q": "dansi",
+        "a": "to dance"
+    },
+    {
+        "q": "-enda kwa miguu",
+        "a": "to walk"
+    },
+    {
+        "q": "-tembea",
+        "a": "to walk"
+    },
+    {
+        "q": "-chechemea",
+        "a": "to limp"
+    },
+    {
+        "q": "chopi",
+        "a": "to limp"
+    },
+    {
+        "q": "-kimbia",
+        "a": "to run"
+    },
+    {
+        "q": "mbio",
+        "a": "to run"
+    },
+    {
+        "q": "-enda",
+        "a": "to go"
+    },
+    {
+        "q": "-panda ",
+        "a": "to go up"
+    },
+    {
+        "q": "-enda juu",
+        "a": "to go up"
+    },
+    {
+        "q": "-panda",
+        "a": "to climb"
+    },
+    {
+        "q": "-kwea",
+        "a": "to climb"
+    },
+    {
+        "q": "-shuka",
+        "a": "to go down"
+    },
+    {
+        "q": "-teremka",
+        "a": "to go down"
+    },
+    {
+        "q": "-enda chini",
+        "a": "to go down"
+    },
+    {
+        "q": "-toka",
+        "a": "to go out"
+    },
+    {
+        "q": "-ja",
+        "a": "to come"
+    },
+    {
+        "q": "-rudi",
+        "a": "to come back"
+    }
+]
+}
