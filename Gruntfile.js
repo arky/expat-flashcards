@@ -15,6 +15,9 @@ module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
+    // Load buildcontrol task
+    grunt.loadNpmTasks('grunt-build-control');
+
     // Configurable paths
     var config = {
         app: 'app',
@@ -317,7 +320,7 @@ module.exports = function (grunt) {
                 'svgmin'
             ]
         }
-    });
+});
 
 
     grunt.registerTask('serve', function (target) {
@@ -364,8 +367,7 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'rev',
-        'usemin',
-        'htmlmin'
+        'usemin'
     ]);
 
     grunt.registerTask('default', [
