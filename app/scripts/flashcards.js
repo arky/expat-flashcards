@@ -56,7 +56,7 @@ var waitingPhoneGap = function() {
 };
 
 var loadingJSON = function() {
-    return $.getJSON("qa.json");
+    return $.getJSON("data/qa.json");
 };
 
 var creatingStats = function(data) {
