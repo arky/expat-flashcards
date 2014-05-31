@@ -29,6 +29,35 @@ module.exports = function (grunt) {
 
         // Project settings
         config: config,
+	
+	// Buildcontrol
+	buildcontrol: {
+	    options: {
+		dir: 'dist',
+		commit: true,
+		push: true,
+		message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+	    },
+	    development: {
+		options: {
+		    remote: 'git@5apps.com:arky_expats-flashcard-dev.git',
+		    branch: 'master'
+		}
+	    },
+	    production: {
+		options: {
+		    remote: 'git@5apps.com:arky_expats-flashcard.git',
+		    branch: 'master',
+		    tag: pkg.version
+		}
+	    },
+	    local: {
+		options: {
+		    remote: '../',
+		    branch: 'build'
+		}
+	    }
+	},
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
